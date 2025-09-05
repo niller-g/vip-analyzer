@@ -1,0 +1,33 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      CONSTANTS_SECTION
+        CONSTANTS_KW "constants"
+        WHITESPACE " "
+        CONSTANT
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FIND_ALL_EXPR
+            L_BRACK "["
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            PIPEPIPE "||"
+            WHITESPACE "  "
+            R_BRACK "]"
+          DOT "."
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 28: expected statement after ||

@@ -1,0 +1,121 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "p"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              RELATION_STMT
+                VAR_EXPR
+                  VAR "_"
+                WHITESPACE " "
+                EQ "="
+                WHITESPACE " "
+                IF_TERM
+                  IF_KW "if"
+                  WHITESPACE " "
+                  CONDITION
+                    REF_TERM
+                      IDENT "a"
+                  WHITESPACE " "
+                  THEN_KW "then"
+                  WHITESPACE " "
+                  STRING_SEQ
+                    STRING_PART
+                      STRING "\"\""
+                  WHITESPACE " "
+                  END_IF
+                    END_KW "end"
+                    WHITESPACE " "
+                    IF_KW "if"
+              COMMA ","
+              WHITESPACE "\r\n        \r\n        "
+              BIN_STMT
+                RELATION_STMT
+                  VAR_EXPR
+                    VAR "_"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  IF_TERM
+                    IF_KW "if"
+                    WHITESPACE " "
+                    CONDITION
+                      REF_TERM
+                        IDENT "c"
+                    WHITESPACE " "
+                    THEN_KW "then"
+                    WHITESPACE "\r\n            "
+                    REF_TERM
+                      IDENT "a"
+                    ERROR
+                      COMMA ","
+                      WHITESPACE " "
+                      IDENT "b"
+                    WHITESPACE "\r\n        "
+                    ELSE_TERM
+                      ELSE_KW "else"
+                      WHITESPACE "\r\n            "
+                      STRING_SEQ
+                        STRING_PART
+                          STRING "\"\""
+                    WHITESPACE "\r\n        "
+                    END_IF
+                      END_KW "end"
+                      WHITESPACE " "
+                      IF_KW "if"
+                COMMA ","
+                WHITESPACE "\r\n\r\n        "
+                RELATION_STMT
+                  VAR_EXPR
+                    VAR "_"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  IF_TERM
+                    IF_KW "if"
+                    WHITESPACE " "
+                    CONDITION
+                      REF_TERM
+                        IDENT "f"
+                    WHITESPACE " "
+                    THEN_KW "then"
+                    WHITESPACE "\r\n        "
+                    ELSE_IF_TERM
+                      ELSEIF_KW "elseif"
+                      WHITESPACE " "
+                      CONDITION
+                        REF_TERM
+                          IDENT "h"
+                      WHITESPACE " "
+                      THEN_KW "then"
+                    WHITESPACE "\r\n        "
+                    END_IF
+                      END_KW "end"
+                      WHITESPACE " "
+                      IF_KW "if"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+error 60: missing `else` branch
+error 116: expected `elseif`, `else` or `end if`, found COMMA
+error 191: missing expression
+error 214: missing expression
+error 214: missing `else` branch

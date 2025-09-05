@@ -1,0 +1,17 @@
+SOURCE_FILE
+  COND_ITEM
+    HASHIF "#if"
+    WHITESPACE " "
+    RELATION_STMT
+      NUMERIC_LITERAL
+        INT_NUMBER "32"
+      WHITESPACE " "
+      EQ "="
+      WHITESPACE " "
+      REF_TERM
+        IDENT "platform_bits"
+    WHITESPACE " "
+    HASHTHEN "#then"
+    WHITESPACE "\r\n"
+    HASHENDIF "#endif"
+  WHITESPACE "\r\n"

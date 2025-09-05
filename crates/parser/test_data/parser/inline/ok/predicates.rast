@@ -1,0 +1,75 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "fisk"
+    WHITESPACE " "
+    IMPLEMENT_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "fisk"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n        "
+        PREDICATE
+          IDENT "tryGet"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "string"
+                WHITESPACE " "
+                VAR "Name"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "val"
+                WHITESPACE " "
+                VAR "Value"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                MODE
+                  DETERM_KW "determ"
+          DOT "."
+        WHITESPACE "\r\n        "
+        PREDICATE
+          IDENT "onShow"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          REF_TERM
+            SCOPE_REF
+              IDENT "window"
+            COLONCOLON "::"
+            IDENT "showListener"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

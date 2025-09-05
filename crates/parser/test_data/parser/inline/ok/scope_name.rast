@@ -1,0 +1,65 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+        SCOPE_TYPE
+          AT "@"
+          VAR "T"
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+        SCOPE_TYPE
+          AT "@"
+          VAR "ABE"
+        COMMA ","
+        WHITESPACE " "
+        SCOPE_TYPE
+          AT "@"
+          VAR "Fisk"
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

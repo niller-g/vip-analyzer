@@ -1,0 +1,32 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    OPEN_QUALIFICATIONS
+      OPEN_KW "open"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "niels"
+        GENERICS
+          L_CURLY "{"
+          TYPE_ARG
+            TYPE
+              REF_TERM
+                IDENT "abe"
+            WHITESPACE " "
+            VAR "V"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          R_CURLY "}"
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+error 29: expected type reference

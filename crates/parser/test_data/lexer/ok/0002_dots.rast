@@ -1,0 +1,6 @@
+DOT "."
+WHITESPACE "\r\n"
+DOTDOT ".."
+WHITESPACE "\r\n"
+DOTDOT ".."
+DOT "."

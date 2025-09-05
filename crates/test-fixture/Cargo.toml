@@ -1,0 +1,19 @@
+[package]
+name = "test-fixture"
+description = "Test fixtures for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+base-db.workspace = true
+span.workspace = true
+test-utils.workspace = true
+
+rustc-hash.workspace = true
+
+[lints]
+workspace = true

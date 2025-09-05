@@ -1,0 +1,54 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              FORMAL_PARAM
+                TYPE
+                  REF_TERM
+                    IDENT "string"
+                WHITESPACE " "
+                VAR "_"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "c"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "string"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

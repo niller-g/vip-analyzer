@@ -1,0 +1,22 @@
+﻿% own pack
+#include @"main.ph"
+
+% privately used packages
+#include @"pfc\time\time.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"vip\vipSyntax\yTreePP\yTreePP.ph"
+#include @"vip\vipSyntax\vipSyntaxSem\vipSyntaxSem.ph"
+#include @"vip\vipSyntax\yTree\yTree.ph"
+#include @"vip\vipSyntax\vipSyntax.ph"
+#include @"pfc\exception\exceptionDump\exceptionDump.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\commandLineParser\commandLineParser.ph"
+#include @"pfc\programControl\programControl.ph"
+#include @"pfc\console\console.ph"
+#include @"pfc\core.ph"
+#include @"pfc\stream\stream.ph"
+
+% implementations
+#include @"main.pro"

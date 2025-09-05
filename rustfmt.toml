@@ -1,0 +1,4 @@
+use_small_heuristics = "Max"
+newline_style = "Unix"
+use_field_init_shorthand = true
+edition = "2024"

@@ -1,0 +1,51 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            PAREN_TERM
+              L_PAREN "("
+              BIN_STMT
+                RELATION_STMT
+                  VAR_EXPR
+                    VAR "First"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  STRING_SEQ
+                    STRING_PART
+                      STRING "'#'"
+                WHITESPACE " "
+                OR_KW "or"
+                WHITESPACE " "
+                RELATION_STMT
+                  VAR_EXPR
+                    VAR "First"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  STRING_SEQ
+                    STRING_PART
+                      STRING "'-'"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

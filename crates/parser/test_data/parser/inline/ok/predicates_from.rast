@@ -1,0 +1,50 @@
+SOURCE_FILE
+  INTERFACE_ITEM
+    INTERFACE_KW "interface"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "bar"
+    WHITESPACE "\r\n    "
+    INTERFACE_SECTIONS
+      PREDICATES_FROM_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE " "
+        FROM_KW "from"
+        WHITESPACE " "
+        SCOPE_REF
+          IDENT "lib"
+        WHITESPACE "\r\n        "
+        ARITY_LIST
+          ARITY
+            IDENT "a"
+          COMMA ","
+          WHITESPACE " "
+          ARITY
+            IDENT "b"
+            SLASH "/"
+          COMMA ","
+          WHITESPACE " "
+          ARITY
+            IDENT "c"
+            SLASH "/"
+            INT_NUMBER "1"
+          COMMA ","
+          WHITESPACE " "
+          ARITY
+            IDENT "d"
+            SLASH "/"
+            INT_NUMBER "1"
+            DOTDOTDOT "..."
+          COMMA ","
+          WHITESPACE " "
+          ARITY
+            IDENT "e"
+            SLASH "/"
+            INT_NUMBER "1"
+            ARROW "->"
+    WHITESPACE "\r\n"
+    END_INTERFACE_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      INTERFACE_KW "interface"
+  WHITESPACE "\r\n"

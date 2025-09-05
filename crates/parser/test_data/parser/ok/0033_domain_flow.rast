@@ -1,0 +1,69 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FUNCTOR_FLOW
+                    IDENT "a"
+                    FLOW
+                      L_PAREN "("
+                      FLOW_ARG_LIST
+                        FLOW_DIRECTION
+                          I_KW "i"
+                      R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE " "
+                  FUNCTOR_FLOW
+                    IDENT "b"
+                    FLOW
+                      L_PAREN "("
+                      FLOW_ARG_LIST
+                        FLOW_DIRECTION
+                          O_KW "o"
+                      R_PAREN ")"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

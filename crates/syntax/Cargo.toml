@@ -1,0 +1,31 @@
+[package]
+name = "syntax"
+description = "Concrete syntax tree definitions for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+parser.workspace = true
+stdx.workspace = true
+
+indexmap.workspace = true
+rustc-hash.workspace = true
+itertools.workspace = true
+either.workspace = true
+triomphe.workspace = true
+smol_str.workspace = true
+rowan.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+expect-test.workspace = true
+test-utils.workspace = true
+rand = "0.9.1"
+
+[lints]
+workspace = true

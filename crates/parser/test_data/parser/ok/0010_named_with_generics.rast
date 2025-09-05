@@ -1,0 +1,55 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CONSTANTS_SECTION
+        CONSTANTS_KW "constants"
+        WHITESPACE "\r\n    "
+        CONSTANT
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "c"
+            GENERICS
+              L_CURLY "{"
+              TYPE_ARG
+                TYPE
+                  VAR_TYPE
+                    VAR "T"
+              COMMA ","
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "d"
+              R_CURLY "}"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CONSTANT
+          IDENT "e"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            SCOPE_REF
+              IDENT "f"
+            COLONCOLON "::"
+            IDENT "g"
+            GENERICS
+              L_CURLY "{"
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "h"
+              R_CURLY "}"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

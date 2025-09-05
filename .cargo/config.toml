@@ -1,0 +1,7 @@
+[alias]
+baseline = "xtask baseline"
+codegen = "xtask codegen"
+dist = "xtask dist"
+verify = "xtask verify"
+test-all = "xtask test-all"
+xtask = "run --package xtask --bin xtask --"

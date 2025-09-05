@@ -1,0 +1,26 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    COLON ":"
+    WHITESPACE " "
+    SCOPE_REF
+      NAMESPACE_PATH
+        PATH_SEGMENT
+          IDENT "a"
+          BACKSLASH "\\"
+      IDENT "scopeRef"
+    ERROR
+      COLON ":"
+      COLON ":"
+      IDENT "qual"
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 20: expected `end class`, found COLON

@@ -1,0 +1,42 @@
+SOURCE_FILE@0..43
+  CLASS_ITEM@0..41
+    CLASS_KW@0..5 "class"
+    WHITESPACE@5..6 " "
+    SCOPE_NAME_DECL@6..7
+      IDENT@6..7 "a"
+    WHITESPACE@7..8 " "
+    CLASS_SECTIONS@8..31
+      DOMAINS_SECTION@8..31
+        DOMAINS_KW@8..15 "domains"
+        WHITESPACE@15..16 " "
+        DOMAIN@16..31
+          IDENT@16..17 "b"
+          WHITESPACE@17..18 " "
+          EQ@18..19 "="
+          WHITESPACE@19..20 " "
+          PREDICATE_DOMAIN@20..30
+            FORMAL_PARAM_LIST@20..22
+              L_PAREN@20..21 "("
+              R_PAREN@21..22 ")"
+            WHITESPACE@22..23 " "
+            FLOW_PATTERN_LIST@23..30
+              FLOW@23..30
+                L_PAREN@23..24 "("
+                FLOW_ARG_LIST@24..29
+                  FUNCTOR_FLOW@24..25
+                    IDENT@24..25 "d"
+                  COMMA@25..26 ","
+                  WHITESPACE@26..27 " "
+                  ERROR@27..29
+                    DOTDOT@27..29 ".."
+                R_PAREN@29..30 ")"
+          DOT@30..31 "."
+    WHITESPACE@31..32 " "
+    END_CLASS_ITEM@32..41
+      END_KW@32..35 "end"
+      WHITESPACE@35..36 " "
+      CLASS_KW@36..41 "class"
+  WHITESPACE@41..43 "\r\n"
+error 25..25: missing flow arguments of functor
+error 26..26: expected flow argument, found DOTDOT
+error 20..30: flow patterns must be preceded by a mode

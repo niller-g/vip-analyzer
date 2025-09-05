@@ -1,0 +1,197 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE " \r\n        "
+            BIN_STMT
+              APPLY_TERM
+                ACCESS_TERM
+                  LIST_EXPR
+                    L_BRACK "["
+                    R_BRACK "]"
+                  COLON ":"
+                  REF_TERM
+                    IDENT "c"
+                L_PAREN "("
+                R_PAREN ")"
+              COMMA ","
+              WHITESPACE " \r\n        "
+              BIN_STMT
+                APPLY_TERM
+                  ACCESS_TERM
+                    LIST_EXPR
+                      L_BRACK "["
+                      R_BRACK "]"
+                    COLON ":"
+                    REF_TERM
+                      SCOPE_REF
+                        IDENT "d"
+                      COLONCOLON "::"
+                      IDENT "e"
+                  L_PAREN "("
+                  R_PAREN ")"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                BIN_STMT
+                  APPLY_TERM
+                    ACCESS_TERM
+                      LIST_EXPR
+                        L_BRACK "["
+                        R_BRACK "]"
+                      COLON ":"
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            BACKSLASH "\\"
+                          IDENT "f"
+                        COLONCOLON "::"
+                        IDENT "g"
+                    L_PAREN "("
+                    R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE "\r\n        "
+                  BIN_STMT
+                    APPLY_TERM
+                      ACCESS_TERM
+                        LIST_EXPR
+                          L_BRACK "["
+                          R_BRACK "]"
+                        COLON ":"
+                        REF_TERM
+                          SCOPE_REF
+                            NAMESPACE_PATH
+                              PATH_SEGMENT
+                                IDENT "h"
+                                BACKSLASH "\\"
+                            IDENT "i"
+                          COLONCOLON "::"
+                          IDENT "j"
+                      L_PAREN "("
+                      R_PAREN ")"
+                    COMMA ","
+                    WHITESPACE "\r\n        "
+                    APPLY_TERM
+                      ACCESS_TERM
+                        LIST_EXPR
+                          L_BRACK "["
+                          R_BRACK "]"
+                        COLON ":"
+                        REF_TERM
+                          SCOPE_REF
+                            NAMESPACE_PATH
+                              PATH_SEGMENT
+                                IDENT "k"
+                                BACKSLASH "\\"
+                              PATH_SEGMENT
+                                IDENT "l"
+                                BACKSLASH "\\"
+                            IDENT "m"
+                          COLONCOLON "::"
+                          IDENT "n"
+                      L_PAREN "("
+                      R_PAREN ")"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "o"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE " \r\n        "
+            BIN_STMT
+              APPLY_TERM
+                ACCESS_TERM
+                  LIST_EXPR
+                    L_BRACK "["
+                    R_BRACK "]"
+                  COLON ":"
+                  REF_TERM
+                    SCOPE_REF
+                      IDENT "p"
+                      GENERICS
+                        L_CURLY "{"
+                        TYPE_ARG
+                          TYPE
+                            REF_TERM
+                              IDENT "t1"
+                        R_CURLY "}"
+                    COLONCOLON "::"
+                    IDENT "q"
+                L_PAREN "("
+                R_PAREN ")"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                APPLY_TERM
+                  ACCESS_TERM
+                    LIST_EXPR
+                      L_BRACK "["
+                      R_BRACK "]"
+                    COLON ":"
+                    REF_TERM
+                      SCOPE_REF
+                        NAMESPACE_PATH
+                          BACKSLASH "\\"
+                        IDENT "r"
+                        GENERICS
+                          L_CURLY "{"
+                          TYPE_ARG
+                            TYPE
+                              REF_TERM
+                                IDENT "t2"
+                          R_CURLY "}"
+                      COLONCOLON "::"
+                      IDENT "s"
+                  L_PAREN "("
+                  R_PAREN ")"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                APPLY_TERM
+                  ACCESS_TERM
+                    LIST_EXPR
+                      L_BRACK "["
+                      R_BRACK "]"
+                    COLON ":"
+                    REF_TERM
+                      SCOPE_REF
+                        NAMESPACE_PATH
+                          PATH_SEGMENT
+                            IDENT "t"
+                            BACKSLASH "\\"
+                        IDENT "u"
+                        GENERICS
+                          L_CURLY "{"
+                          TYPE_ARG
+                            TYPE
+                              REF_TERM
+                                IDENT "t3"
+                          R_CURLY "}"
+                      COLONCOLON "::"
+                      IDENT "v"
+                  L_PAREN "("
+                  R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

@@ -1,0 +1,71 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "last"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "last"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                COMMA ","
+                WHITESPACE " "
+                ERROR
+                  DOTDOT ".."
+                  DOT "."
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "middle"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "middle"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                COMMA ","
+                WHITESPACE " "
+                ERROR
+                  DOTDOT ".."
+                  DOT "."
+                COMMA ","
+                WHITESPACE " "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+error 43: expected type reference
+error 78: expected type reference

@@ -1,0 +1,31 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_DOMAIN
+            RANGE_DOMAIN
+              RANGE_EXPR
+                L_BRACK "["
+                R_BRACK "]"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+      WHITESPACE " "
+      SCOPE_NAME_DECL
+        IDENT "a"
+error 33: expected DOTDOT

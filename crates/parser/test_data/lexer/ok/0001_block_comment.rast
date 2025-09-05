@@ -1,0 +1,6 @@
+COMMENT "/* */"
+WHITESPACE "\r\n"
+COMMENT "/**/"
+WHITESPACE "\r\n"
+COMMENT "/* /* */ */"
+WHITESPACE "\r\n"

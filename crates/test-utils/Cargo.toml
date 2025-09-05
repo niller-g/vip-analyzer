@@ -1,0 +1,22 @@
+[package]
+name = "test-utils"
+description = "Assorted testing utilities for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+stdx.workspace = true
+paths.workspace = true
+
+dissimilar = "1.0.10"
+text-size.workspace = true
+rustc-hash.workspace = true
+
+[lints]
+workspace = true

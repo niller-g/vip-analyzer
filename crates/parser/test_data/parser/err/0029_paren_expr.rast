@@ -1,0 +1,30 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            PAREN_TERM
+              L_PAREN "("
+              NUMERIC_LITERAL
+                INT_NUMBER "1"
+              R_PAREN ")"
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+error 47: unexpected clause ending, found END_KW

@@ -1,0 +1,17 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    COLON ":"
+  WHITESPACE " "
+  CLASS_ITEM
+    CLASS_KW "class"
+    SCOPE_NAME_DECL
+error 9: expected IDENT
+error 9: expected interface reference
+error 9: expected `end class`, found CLASS_KW
+error 15: expected IDENT
+error 15: expected `end class`, found EOF

@@ -1,0 +1,38 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "ohai"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n        "
+        GUARD_CLAUSE
+          IDENT "hello"
+          WHITESPACE " "
+          GUARD_KW "guard"
+          WHITESPACE " "
+          LAMBDA_EXPR
+            L_CURLY "{"
+            WHITESPACE "  "
+            COLONDASH ":-"
+            WHITESPACE " "
+            RELATION_STMT
+              REF_TERM
+                IDENT "count"
+              WHITESPACE " "
+              EQ "="
+              WHITESPACE " "
+              NUMERIC_LITERAL
+                INT_NUMBER "0"
+            WHITESPACE " "
+            R_CURLY "}"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

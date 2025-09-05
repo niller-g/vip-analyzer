@@ -1,0 +1,32 @@
+[package]
+name = "hir"
+description = "A high-level object-oriented access to Visual Prolog code for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+# local deps
+base-db.workspace = true
+hir-def.workspace = true
+hir-ty.workspace = true
+intern.workspace = true
+stdx.workspace = true
+syntax.workspace = true
+span.workspace = true
+
+# external deps
+rustc-hash.workspace = true
+itertools.workspace = true
+triomphe.workspace = true
+smallvec.workspace = true
+arrayvec.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,3 @@
+COMMENT "/* */"
+WHITESPACE "\r\n"
+COMMENT "/*\r\n/* /* */ */\r\n" error: Missing trailing `*/` symbols to terminate the block comment

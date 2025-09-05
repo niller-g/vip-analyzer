@@ -1,0 +1,38 @@
+[package]
+name = "ide"
+description = "IDE-centric APIs for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+# local deps
+ide-db.workspace = true
+syntax.workspace = true
+ide-diagnostics.workspace = true
+stdx.workspace = true
+span.workspace = true
+# ide should depend only on the top-level `hir` package. if you need
+# something from some `hir-xxx` subpackage, reexport the API via `hir`.
+hir.workspace = true
+
+# external deps
+triomphe.workspace = true
+itertools.workspace = true
+either.workspace = true
+nohash-hasher.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+test-utils.workspace = true
+test-fixture.workspace = true
+
+expect-test.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,19 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    TYPE_BOUNDS
+      TYPE_BOUND
+        WHERE_KW "where"
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 18: expected variable or scope-param as subject in type bound, found END_KW
+error 18: expected SUPPORTS_KW
+error 18: expected type reference

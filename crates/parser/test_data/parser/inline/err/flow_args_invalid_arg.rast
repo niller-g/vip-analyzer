@@ -1,0 +1,41 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE " "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FUNCTOR_FLOW
+                    IDENT "d"
+                  COMMA ","
+                  WHITESPACE " "
+                  ERROR
+                    DOTDOT ".."
+                R_PAREN ")"
+          DOT "."
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 25: missing flow arguments of functor
+error 26: expected flow argument, found DOTDOT

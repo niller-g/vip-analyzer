@@ -1,0 +1,65 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p1"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                FLOW_PATTERN_LIST
+                  ANY_FLOW
+                    ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p2"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                MODE
+                  PROCEDURE_KW "procedure"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p3"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                MODE
+                  PROCEDURE_KW "procedure"
+                WHITESPACE " "
+                FLOW_PATTERN_LIST
+                  ANY_FLOW
+                    ANYFLOW_KW "anyflow"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

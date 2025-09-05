@@ -1,0 +1,15 @@
+% own pack
+#include @"taskWindow\taskWindow.ph"
+% privately used packages
+#include @"aboutDialog\aboutDialog.ph"
+#include @"pfc\core.ph"
+#include @"pfc\gui\applicationWindow\applicationWindow.ph"
+#include @"pfc\gui\controls\messageControl\messageControl.ph"
+#include @"pfc\gui\documentWindow\documentWindow.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\resourceIdentifiers.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"pfc\vpi\vpiToolbar\vpiToolbar.ph"
+#include @"taskWindow\Toolbars\Toolbars.ph"
+% implementations
+#include @"taskWindow\taskWindow.pro"

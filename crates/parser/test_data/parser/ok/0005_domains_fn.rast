@@ -1,0 +1,2898 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "r"
+                WHITESPACE " "
+                VAR "T"
+            WHITESPACE " "
+            SUSPENDING_KW "suspending"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+            WHITESPACE " "
+            FLOW_PATTERN_LIST
+              FLOW
+                L_PAREN "("
+                FLOW_ARG_LIST
+                  FLOW_DIRECTION
+                    I_KW "i"
+                  COMMA ","
+                  FLOW_DIRECTION
+                    O_KW "o"
+                R_PAREN ")"
+              WHITESPACE " "
+              ANY_FLOW
+                ANYFLOW_KW "anyflow"
+            WHITESPACE " "
+            CALLING_CONVENTION
+              LANGUAGE_KW "language"
+              WHITESPACE " "
+              IDENT "c"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"

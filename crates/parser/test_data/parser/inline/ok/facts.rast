@@ -1,0 +1,74 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "hej"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      FACTS_SECTION
+        FACTS_KW "facts"
+        WHITESPACE "\r\n        "
+        FACT_VAR
+          IDENT "a"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "integer"
+          DOT "."
+        WHITESPACE "\r\n        "
+        FACT_VAR
+          IDENT "b"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "string"
+          WHITESPACE " "
+          COLONEQ ":="
+          WHITESPACE " "
+          STRING_SEQ
+            STRING_PART
+              STRING "\"hej\""
+          DOT "."
+        WHITESPACE "\r\n        "
+        FACT_VAR
+          IDENT "c"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "abe"
+          WHITESPACE " "
+          COLONEQ ":="
+          WHITESPACE " "
+          ERRONEOUS_KW "erroneous"
+          DOT "."
+        WHITESPACE "\r\n        "
+        FACT_FUNCTOR
+          IDENT "d"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          FORMAL_PARAM_LIST
+            L_PAREN "("
+            FORMAL_PARAM
+              TYPE
+                REF_TERM
+                  IDENT "ticket"
+              WHITESPACE " "
+              VAR "Ticket"
+            R_PAREN ")"
+          WHITESPACE " "
+          NONDETERM_KW "nondeterm"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

@@ -1,0 +1,70 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    ATTRIBUTE_LIST
+      L_BRACK "["
+      R_BRACK "]"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "b"
+    WHITESPACE " "
+    ATTRIBUTE_LIST
+      L_BRACK "["
+      EXPRS
+        REF_TERM
+          IDENT "c"
+      R_BRACK "]"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "d"
+    WHITESPACE " "
+    ATTRIBUTE_LIST
+      L_BRACK "["
+      EXPRS
+        REF_TERM
+          SCOPE_REF
+            NAMESPACE_PATH
+              PATH_SEGMENT
+                IDENT "e"
+                BACKSLASH "\\"
+            IDENT "f"
+          COLONCOLON "::"
+          IDENT "g"
+        COMMA ","
+        WHITESPACE " "
+        APPLY_TERM
+          REF_TERM
+            IDENT "h"
+          L_PAREN "("
+          FUNCTOR_ARGS
+            STRING_SEQ
+              STRING_PART
+                STRING "\"\""
+          R_PAREN ")"
+      R_BRACK "]"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

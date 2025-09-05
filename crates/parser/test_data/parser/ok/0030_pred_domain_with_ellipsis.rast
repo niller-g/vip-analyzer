@@ -1,0 +1,35 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "loggerType"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              FORMAL_PARAM
+                TYPE
+                  REF_TERM
+                    IDENT "string"
+                WHITESPACE " "
+                VAR "Category"
+              COMMA ","
+              WHITESPACE " "
+              DOTDOTDOT "..."
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"

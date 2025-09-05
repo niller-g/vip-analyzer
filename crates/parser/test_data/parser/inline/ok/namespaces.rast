@@ -1,0 +1,70 @@
+SOURCE_FILE
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        BACKSLASH "\\"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      IDENT "a"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        BACKSLASH "\\"
+      IDENT "a"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        PATH_SEGMENT
+          IDENT "a"
+          BACKSLASH "\\"
+      IDENT "b"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        BACKSLASH "\\"
+        PATH_SEGMENT
+          IDENT "a"
+          BACKSLASH "\\"
+      IDENT "b"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        PATH_SEGMENT
+          IDENT "a"
+          BACKSLASH "\\"
+        PATH_SEGMENT
+          IDENT "b"
+          BACKSLASH "\\"
+      IDENT "c"
+  WHITESPACE "\r\n"
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        BACKSLASH "\\"
+        PATH_SEGMENT
+          IDENT "a"
+          BACKSLASH "\\"
+        PATH_SEGMENT
+          IDENT "b"
+          BACKSLASH "\\"
+      IDENT "c"
+  WHITESPACE "\r\n"

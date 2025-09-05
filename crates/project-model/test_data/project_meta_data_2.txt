@@ -1,0 +1,2373 @@
+ProjectMetaData {
+    debug_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "deb",
+        },
+    ),
+    final_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "exe",
+        },
+    ),
+    intermediate_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "obj",
+        },
+    ),
+    library_directory: None,
+    include_directories: IncludeDirectoryList {
+        directories: [
+            VariablePath {
+                variable: None,
+                path: ".",
+            },
+            VariablePath {
+                variable: Some(
+                    "ProDir",
+                ),
+                path: "",
+            },
+            VariablePath {
+                variable: Some(
+                    "ProDir",
+                ),
+                path: "vip",
+            },
+        ],
+    },
+    item_set: Items {
+        items: [
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "dll\\WebView2Loader.dll",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\boostRegex.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\Lexilla.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\Scintilla.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\vipInit.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\vipKernel.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\vipRun.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\vipVpi.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "lib\\win32.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\application\\Exe\\exe.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\async.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\executionContext\\executionContext.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\executionContext\\executionContext_pool\\executionContext_pool.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\future\\future.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\queueAsync\\queueAsync.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\resumable\\resumable.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\suspendingCore\\suspendingCore.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tp.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\callbackSupport\\callbackSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\ioCallback\\ioCallback.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\threadpoolIoImpl\\threadpoolIoImpl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\timerCallback\\timerCallback.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\timerImpl\\timerImpl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\tps.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\support\\tp\\tps\\waitCallback\\waitCallback.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\async\\waitSet\\waitSet.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\basis\\cancelable\\cancelable.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\basis\\disposable\\disposable.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\basis\\disposable\\disposeRetract\\disposeRetract.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\basis\\iterator\\iterator.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\basis\\uncollectable\\uncollectable.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\binary\\binary.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\boolean\\boolean.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\algebraic\\redBlackSet\\redBlackSet.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\algebraic\\redBlackTree\\redBlackTree.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\algebraic\\redBlackTree\\redBlackTreeRep\\redBlackTreeRep.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\collection.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\arrayM_inline\\arrayM_inline.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\mapM_redBlack\\mapM_redBlack.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\multiMapM_redBlack\\multiMapM_redBlack.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\queueM_fact\\queueM_fact.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\setM_redBlack\\setM_redBlack.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\setM_redBlack_cas\\setM_redBlack_cas.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM_boolean\\varM_boolean.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM_integer\\varM_integer.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM_lazy\\varM_lazy.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM_optional\\varM_optional.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\M\\varM\\varM_unsigned\\varM_unsigned.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\support\\collectionMsupport\\collectionMsupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\support\\collectionSupport\\collectionSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\support\\mapMSupport\\mapMSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\support\\mapSupport\\mapSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\collection\\support\\modifiableSupport\\modifiableSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\comSupport\\comSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\exceptionHandling\\exceptionHandling.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\callbackSupport\\callbackSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\completedHandler0Support\\completedHandler0Support.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\completedHandler1Support\\completedHandler1Support.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\eventHandlerSupport\\eventHandlerSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\native\\native.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\com\\winRT\\winRT.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\core.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\cryptography\\cryptography.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\event\\event.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\event\\eventSupport\\eventSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\exception\\exception.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\exception\\exceptionDump\\exceptionDump.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\fileSystem\\fileSystem.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\applicationWindow\\applicationWindow.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\clipboard\\clipboard.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\commands\\command\\Command.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\commonDialogs\\commonDialogs.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\button\\button.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\checkButton\\checkButton.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\containerControl\\containerControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\controls.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\controlSupport\\controlSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\editControl\\editControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\groupBox\\groupBox.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\iconControl\\iconControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\integerControl\\integerControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\listControl\\listControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\messageControl\\messageControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\messageControl\\outputStream_post\\outputStream_post.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\radioButton\\radioButton.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\realControl\\realControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\sciLexer\\sciLexer.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\sciLexer\\sciLexerSupport\\sciLexerSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\statusBarControl\\statusBarControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\textControl\\textControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\versionControl\\versionControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\controls\\webView2\\webView2.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\documentWindow\\documentWindow.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\errorPresentationDialog\\errorPresentationDialog.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\brush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\hatchBrush\\hatchBrush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\linearGradientBrush\\linearGradientBrush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\pathGradientBrush\\pathGradientBrush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\solidBrush\\solidBrush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\brush\\textureBrush\\textureBrush.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\color\\color.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\customLineCap\\customLineCap.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\font\\font.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\font\\fontCollection\\fontCollection.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\font\\fontFamily\\fontFamily.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\gdiplus.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\gdiplusSupport\\gdiplusSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\graphics\\graphics.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\image\\bitmap\\bitmap.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\image\\cachedBitmap\\cachedBitmap.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\image\\icon\\icon.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\image\\image.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\image\\metafile\\metafile.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\imageAttributes\\imageAttributes.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\matrix\\matrix.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\path\\graphicsPath\\graphicsPath.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\pen\\pen.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\region\\region.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gdiplus\\stringFormat\\stringFormat.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\gui.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\guiSupport\\dpiScaler\\dpiScaler.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\guiSupport\\guiSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\guiSupport\\windowActionQueue\\windowActionQueue.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\ImageList\\ImageList.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\messageBox\\messageBox.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\statusBar\\statusBar.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\toolTip\\toolTip.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\gui\\toolTip\\tooltipSupport\\tooltipSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\guid\\guid.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\list\\list.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\log\\appender\\logAppenderSupport\\logAppenderSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\log\\log.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\log\\support\\asynchLog\\asynchLog.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\log\\support\\filter\\filter.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\log\\support\\formatter\\formatter.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\math\\math.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\math\\random\\random.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\memory.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\segmented\\segmented.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\segmented\\segmented_binary\\segmented_binary.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\segmented\\segmented_utf16\\segmented_utf16.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\segmented\\segmented_utf8\\segmented_utf8.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\segmented\\segmentedSupport\\segmentedSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\memory\\weakReference\\weakReference.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\compareAndSwap\\compareAndSwap.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\criticalSection\\criticalSection.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\criticalSectionSupport\\criticalSectionSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\event\\event.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\mutex\\mutex.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\semaphore\\semaphore.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\srwLock\\srwLock.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\syncObject\\syncObject.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\thread\\thread.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\multiThread\\waitableQueue\\waitableQueue.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\namedValue\\namedValue.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\presenter\\presenter.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\programControl\\programControl.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\reflection\\reflection.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\reflection\\typeLibrary\\typeLibrary.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\regEx\\regEx.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\registry\\registry.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\std\\std.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\stream\\inputStreamSupport\\inputStreamSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\stream\\inputSupport_mode\\inputSupport_mode.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\stream\\outputStreamSupport\\outputStreamSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\stream\\stream.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\string\\string.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\string8\\string8.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\lexer\\lexer.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\lexer\\lexer_stringSupport\\lexer_stringSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\lrParser\\lrParser.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\lrParser\\lrParserDomains\\lrParserDomains.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStream.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppPositionState\\ppPositionState.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppScope_all\\ppScope_all.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppScope_allOrNone\\ppScope_allOrNone.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppScope_byNeed\\ppScope_byNeed.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppScope_indent\\ppScope_indent.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppSection\\ppSection.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\ppStream\\ppStreamSupport\\ppStreamSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\syntax\\syntax.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\templateExpander\\templateExpander.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\time\\iso8601Parser\\iso8601Parser.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\time\\time.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\vpi\\vpi.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\vpi\\vpi_native\\vpi_native.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\vpi\\vpiDomains\\vpiDomains.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\vpi\\vpiToolbar\\vpiToolbar.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\json.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\jsonRpc\\jsonRpc.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\jsonRpc\\jsonRpcSupport\\jsonRpcSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\jsonRpcApi\\jsonRpcApi.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\jsonSupport\\jsonSupport.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\bCrypt_api\\bCrypt_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\clipboard_api\\clipboard_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\basicInterfaces\\basicInterfaces.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\com_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\comDomains\\comDomains.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\iStream_api\\iStream_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\safeArray_api\\safeArray_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\standardInterfaces\\IEnumXXXX\\iEnumXXXX.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\standardInterfaces\\import\\standardInterfaces_import.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\standardInterfaces\\standardInterfaces.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\crypt_api\\crypt_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\dpi_api\\dpi_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\exe_api\\exe_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\fileSystem_api\\fileSystem_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\gdiplus_api\\gdiplus_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\gui_api\\gui_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\guid_api\\guid_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\hash_api\\hash_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\iconDirectory_api\\iconDirectory_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\ImageList_api\\ImageList_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\locale_api\\locale_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\memory_api\\memory_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\multiThread_api\\multiThread_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\ntStatus\\ntStatus.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\registry_api\\registry_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\runTime_api\\runTime_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\sciLexer_api\\sciLexer_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\Shell_api\\Shell_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\string_api\\string_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\string8_api\\string8_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\systemInformation_api\\systemInformation_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\threadpool_api\\threadpool_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\time_api\\time_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\useDll_api\\useDll_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\uxTheme_api\\uxTheme_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\webView2_api\\iCoreWebView2EnvironmentZ\\iCoreWebView2EnvironmentZ.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\webView2_api\\iCoreWebView2Z\\iCoreWebView2Z.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\webView2_api\\import\\webView2_api_import.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\webView2_api\\native\\webView2_api_native.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\webView2_api\\webView2_api.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\windowsAPI.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\WinErrors\\winErrors.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\prologSyntax\\prologSyntax.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\prologSyntax\\prologSyntaxYTree\\prologSyntaxYTree.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\vipSyntax\\vipSyntax.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\vipSyntax\\vipSyntaxSem\\vipSyntaxSem.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\vipSyntax\\yTree\\yTree.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "vip\\vipSyntax\\yTreePP\\yTreePP.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "aboutDialog\\aboutDialog.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "main.manifest",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "main.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "main.version",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "ProjectIcon.ico",
+                },
+                resource_id: Some(
+                    "application_icon",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\TaskMenu.mnu",
+                },
+                resource_id: Some(
+                    "id_TaskMenu",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\taskWindow.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\CopyBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_CopyBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\CutBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_CutBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\HelpBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_HelpBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\NewFileBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_NewFileBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\OpenFileBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_OpenFileBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\PasteBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_PasteBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\ProjectToolbar.tb",
+                },
+                resource_id: Some(
+                    "id_tb_1",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\RedoBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_RedoBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\SaveFileBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_SaveFileBitmap",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\Toolbars.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "taskWindow\\Toolbars\\UndoBitmap.bmp",
+                },
+                resource_id: Some(
+                    "idb_UndoBitmap",
+                ),
+            },
+        ],
+    },
+}

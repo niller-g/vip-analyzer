@@ -1,0 +1,130 @@
+on: [push, pull_request]
+
+jobs:
+  rust:
+    name: Rust
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      CI: 1
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: 1.87
+          components: rustfmt, clippy
+          cache: true
+
+      - name: Lint
+        run: cargo clippy --all-features -- -D warnings
+
+      - name: Run tests
+        run: cargo test
+
+      - name: Check formatting
+        id: fmt
+        continue-on-error: true
+        uses: actions-rust-lang/rustfmt@v1
+
+      - name: Fix formatting
+        if: steps.fmt.outcome == 'failure' && matrix.os == 'ubuntu-latest'
+        run: cargo fmt
+
+      - name: Recheck formatting after fix
+        id: recheck_fmt
+        if: steps.fmt.outcome == 'failure' && matrix.os == 'ubuntu-latest'
+        uses: actions-rust-lang/rustfmt@v1
+
+      - name: Commit formatting fixes
+        if: steps.recheck_fmt.outcome == 'success' && matrix.os == 'ubuntu-latest'
+        run: |
+          git config --global user.name "Git bot 😎"
+          git config --global user.email "gitbot@no-reply.com"
+          git pull
+          git diff --quiet || (git commit -am "Auto format fix" && git push)
+
+      - name: Benchmark
+        if: matrix.os == 'ubuntu-latest'
+        run: cargo bench
+
+      - name: Upload benchmark results
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results-${{ runner.os }}
+          path: target/criterion
+
+  typescript:
+    name: TypeScript
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install xvfb
+        if: matrix.os == 'ubuntu-latest'
+        run: sudo apt-get install -y xvfb
+
+      - run: npm ci
+        working-directory: ./editors/code
+
+      # If this steps fails, your code's type integrity might be wrong at some places at TypeScript level.
+      - run: npm run typecheck
+        working-directory: ./editors/code
+
+      # You may fix the code automatically by running `npm run lint:fix` if this steps fails.
+      - run: npm run lint
+        working-directory: ./editors/code
+
+      # To fix this steps, please run `npm run format`.
+      - run: npm run format:check
+        working-directory: ./editors/code
+
+      - name: Run VS Code tests (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        env:
+          VSCODE_CLI: 1
+        run: xvfb-run npm test
+        working-directory: ./editors/code
+
+      - name: Run VS Code tests (Windows)
+        if: matrix.os == 'windows-latest'
+        env:
+          VSCODE_CLI: 1
+        run: npm test
+        working-directory: ./editors/code
+
+      - run: npm run package --scripts-prepend-node-path
+        working-directory: ./editors/code
+
+  typo-check:
+    name: Typo Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FORCE_COLOR: 1
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: check for typos
+        uses: crate-ci/typos@master
+        with:
+          config: ./.typos.toml

@@ -1,0 +1,20 @@
+SOURCE_FILE
+  GOAL_ITEM
+    GOAL_KW "goal"
+    WHITESPACE " "
+    APPLY_TERM
+      REF_TERM
+        SCOPE_REF
+          IDENT "mainExe"
+        COLONCOLON "::"
+        IDENT "run"
+      L_PAREN "("
+      FUNCTOR_ARGS
+        REF_TERM
+          SCOPE_REF
+            IDENT "main"
+          COLONCOLON "::"
+          IDENT "run"
+      R_PAREN ")"
+    DOT "."
+  WHITESPACE "\r\n"

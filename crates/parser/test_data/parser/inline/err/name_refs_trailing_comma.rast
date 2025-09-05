@@ -1,0 +1,45 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n   "
+    OPEN_QUALIFICATIONS
+      OPEN_KW "open"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "a"
+        GENERICS
+          L_CURLY "{"
+          ERROR
+            COMMA ","
+          R_CURLY "}"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "b"
+        GENERICS
+          L_CURLY "{"
+          TYPE_ARG
+            TYPE
+              REF_TERM
+                IDENT "c"
+          COMMA ","
+          WHITESPACE " "
+          TYPE_ARG
+            TYPE
+              REF_TERM
+                IDENT "d"
+          ERROR
+            COMMA ","
+          R_CURLY "}"
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 19: expected type reference
+error 19: unexpected trailing comma
+error 29: unexpected trailing comma

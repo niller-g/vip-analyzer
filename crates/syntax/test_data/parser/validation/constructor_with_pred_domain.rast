@@ -1,0 +1,26 @@
+SOURCE_FILE@0..61
+  CLASS_ITEM@0..59
+    CLASS_KW@0..5 "class"
+    WHITESPACE@5..6 " "
+    SCOPE_NAME_DECL@6..7
+      IDENT@6..7 "a"
+    WHITESPACE@7..11 "\r\n\r\n"
+    CLASS_SECTIONS@11..46
+      CONSTRUCTORS_SECTION@11..46
+        CONSTRUCTORS_KW@11..23 "constructors"
+        WHITESPACE@23..29 "\r\n    "
+        CONSTRUCTOR@29..46
+          IDENT@29..32 "new"
+          WHITESPACE@32..33 " "
+          COLON@33..34 ":"
+          WHITESPACE@34..35 " "
+          REF_TERM@35..45
+            IDENT@35..45 "predDomain"
+          DOT@45..46 "."
+    WHITESPACE@46..50 "\r\n\r\n"
+    END_CLASS_ITEM@50..59
+      END_KW@50..53 "end"
+      WHITESPACE@53..54 " "
+      CLASS_KW@54..59 "class"
+  WHITESPACE@59..61 "\r\n"
+error 35..45: constructor parameters must be explicitly typed

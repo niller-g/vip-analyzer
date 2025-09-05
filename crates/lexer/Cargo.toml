@@ -1,0 +1,32 @@
+[package]
+name = "lexer"
+description = "A lexer for the Visual Prolog language."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+doctest = false
+
+[dependencies]
+unicode-xid = "0.2.4"
+unicode-properties = { version = "0.1.1", default-features = false, features = [
+    "emoji",
+] }
+
+[dev-dependencies]
+stdx.workspace = true
+
+expect-test.workspace = true
+criterion.workspace = true
+walkdir.workspace = true
+
+[lints]
+workspace = true
+
+[[bench]]
+name = "lexing"
+harness = false

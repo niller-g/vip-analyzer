@@ -1,0 +1,68 @@
+[package]
+name = "vip-analyzer"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+
+[[bin]]
+name = "vip-analyzer"
+path = "src/bin/main.rs"
+
+[dependencies]
+ide-db.workspace = true
+stdx.workspace = true
+paths.workspace = true
+ide.workspace = true
+project-model.workspace = true
+syntax.workspace = true
+vfs-notify.workspace = true
+intern.workspace = true
+toolchain.workspace = true
+hir.workspace = true
+
+lsp-types = "0.95.0"
+memchr = "2.7.4"
+parking_lot = "0.12.3"
+always-assert = "0.2.0"
+num_cpus = "1.16.0"
+toml = "0.8.20"
+dirs = "6.0.0"
+crossbeam-channel.workspace = true
+dissimilar.workspace = true
+xflags.workspace = true
+rustc-hash.workspace = true
+anyhow.workspace = true
+lsp-server.workspace = true
+semver.workspace = true
+tracing-subscriber.workspace = true
+vfs.workspace = true
+tracing.workspace = true
+tracing-tree.workspace = true
+serde_json = { workspace = true, features = ["preserve_order"] }
+serde.workspace = true
+serde_derive.workspace = true
+triomphe.workspace = true
+itertools.workspace = true
+nohash-hasher.workspace = true
+process-wrap.workspace = true
+indexmap.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Threading",
+] }
+
+[dev-dependencies]
+test-utils.workspace = true
+expect-test.workspace = true
+
+[features]
+force-always-assert = ["stdx/force-always-assert"]
+
+[lints]
+workspace = true

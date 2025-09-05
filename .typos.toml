@@ -1,0 +1,14 @@
+[files]
+extend-exclude = ["visual-prolog", "test_data"]
+
+[default]
+extend-ignore-re = [
+    # ignore `// spellchecker:off` until `// spellchecker:on`
+    "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
+]
+
+[default.extend-words]
+anser = "anser"
+trivias = "trivias"
+jod = "jod"
+typ = "typ"

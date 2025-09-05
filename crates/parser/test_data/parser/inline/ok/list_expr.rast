@@ -1,0 +1,38 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      CONSTANTS_SECTION
+        CONSTANTS_KW "constants"
+        WHITESPACE " "
+        CONSTANT
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          LIST_EXPR
+            L_BRACK "["
+            EXPRS
+              LIST_EXPR
+                L_BRACK "["
+                R_BRACK "]"
+              COMMA ","
+              WHITESPACE " "
+              LIST_EXPR
+                L_BRACK "["
+                EXPRS
+                  NUMERIC_LITERAL
+                    INT_NUMBER "1"
+                R_BRACK "]"
+            R_BRACK "]"
+          DOT "."
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

@@ -1,0 +1,47 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Extension",
+            "group": "build",
+            "type": "npm",
+            "script": "build",
+            "path": "editors/code/",
+            "problemMatcher": {
+                "base": "$tsc",
+                "fileLocation": ["relative", "${workspaceFolder}/editors/code/"]
+            }
+        },
+        {
+            "label": "Build Server (Debug)",
+            "group": "build",
+            "type": "shell",
+            "command": "cargo build --package vip-analyzer",
+            "problemMatcher": "$rustc"
+        },
+        {
+            "label": "Build Server (Release)",
+            "group": "build",
+            "type": "shell",
+            "command": "cargo build --release --package vip-analyzer",
+            "problemMatcher": "$rustc"
+        },
+        {
+            "label": "Build Server (Debug) and Extension",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["Build Extension", "Build Server (Debug)"],
+            "problemMatcher": "$rustc"
+        },
+        {
+            "label": "Build Server (Release) and Extension",
+            "group": "build",
+            "dependsOn": ["Build Extension", "Build Server (Release)"],
+            "problemMatcher": "$rustc"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "bar"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "used"
+                R_BRACK "]"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

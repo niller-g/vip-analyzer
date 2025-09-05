@@ -1,0 +1,8 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+  WHITESPACE "\r\n"
+error 7: expected `end class`, found EOF

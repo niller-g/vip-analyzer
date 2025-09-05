@@ -1,0 +1,186 @@
+{
+    "name": "vip",
+    "scopeName": "source.vip",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#number"
+        },
+        {
+            "include": "#symbols"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#variable"
+        },
+        {
+            "include": "#identifier"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.vip",
+                    "match": "\\b((end +)?(interface|class|implement)|goal|namespace|where|open|inherits|supports|resolve|delegate|monitor|constants|domains|predicates|constructors|properties|clauses|facts)\\b"
+                },
+                {
+                    "name": "keyword.control.vip",
+                    "match": "\\b((end +)?(if|foreach|try|match)|guard|language|stdcall|apicall|c|thiscall|prolog|digits|then|elseif|else|do|catch|finally|erroneous|failure|procedure|determ|multi|nondeterm|suspendable|anyflow|and|or|externally|from|div|mod|rem|quot|in|orelse|otherwise|case)\\b"
+                },
+                {
+                    "name": "keyword.other.vip",
+                    "match": "#(include|bininclude|stringinclude|requires|orrequires|if|then|else|elseif|endif|error|message|export|externally|options|grammarinclude|grammargenerate)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.vip",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "include": "#stringescape"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.vip",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "include": "#stringescape"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.other.vip",
+                    "begin": "@\\(",
+                    "end": "\\)"
+                },
+                {
+                    "name": "string.quoted.other.vip",
+                    "begin": "@\\[",
+                    "end": "\\]"
+                },
+                {
+                    "name": "string.quoted.other.vip",
+                    "begin": "@\\{",
+                    "end": "\\}"
+                },
+                {
+                    "name": "string.quoted.other.vip",
+                    "begin": "@<",
+                    "end": ">"
+                },
+                {
+                    "name": "string.quoted.other.vip",
+                    "begin": "@([^\\w])",
+                    "end": "\\1"
+                }
+            ]
+        },
+        "stringescape": {
+            "patterns": [
+                {
+                    "name": "constant.character.escape.vip",
+                    "match": "\\\\([\\\\ntr'\"]|u[0-9a-fA-F]{4})"
+                }
+            ]
+        },
+        "dockeywords": {
+            "patterns": [
+                {
+                    "name": "comment.block.documentation.vip",
+                    "match": "@(short|detail|example|end|exception|withdomain|noformat)\\b"
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.percentage.vip",
+                    "begin": "%",
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#dockeywords"
+                        }
+                    ]
+                },
+                {
+                    "name": "comment.block.vip",
+                    "begin": "/\\*",
+                    "end": "\\*/",
+                    "patterns": [
+                        {
+                            "include": "#dockeywords"
+                        }
+                    ]
+                }
+            ]
+        },
+        "number": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.vip",
+                    "match": "0x[0-9a-fA-F]+"
+                },
+                {
+                    "name": "constant.numeric.vip",
+                    "match": "0o[0-7]+"
+                },
+                {
+                    "name": "constant.numeric.vip",
+                    "match": "\\.[0-9][0-9_]*([eE][+-]?[0-9_]+)?"
+                },
+                {
+                    "name": "constant.numeric.vip",
+                    "match": "[0-9][0-9_]*(\\.[0-9][0-9_]*)?([eE][+-]?[0-9_]+)?"
+                }
+            ]
+        },
+        "variable": {
+            "patterns": [
+                {
+                    "name": "variable.language.vip",
+                    "match": "\\bThis\\b"
+                },
+                {
+                    "name": "variable.parameter.vip",
+                    "match": "[A-Z][\\w]*"
+                },
+                {
+                    "name": "variable.other.vip",
+                    "match": "_[\\w]*"
+                }
+            ]
+        },
+        "identifier": {
+            "patterns": [
+                {
+                    "name": "entity.name.vip",
+                    "match": "[a-z][\\w]+"
+                }
+            ]
+        },
+        "symbols": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.vip",
+                    "match": "[\\-\\[\\]\\\\!,.;:+^~<=>/(){}*|]+"
+                }
+            ]
+        }
+    }
+}

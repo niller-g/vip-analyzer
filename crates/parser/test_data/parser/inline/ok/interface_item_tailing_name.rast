@@ -1,0 +1,15 @@
+SOURCE_FILE
+  INTERFACE_ITEM
+    INTERFACE_KW "interface"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    END_INTERFACE_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      INTERFACE_KW "interface"
+      WHITESPACE " "
+      SCOPE_NAME_DECL
+        IDENT "a"
+  WHITESPACE "\r\n"

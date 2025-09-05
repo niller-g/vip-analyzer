@@ -1,0 +1,42 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            RELATION_STMT
+              NUMERIC_LITERAL
+                INT_NUMBER "1"
+              WHITESPACE " "
+              GT ">"
+              WHITESPACE " "
+              NUMERIC_LITERAL
+                INT_NUMBER "2"
+          WHITESPACE " "
+          ERROR
+            LT "<"
+            WHITESPACE " "
+            INT_NUMBER "3"
+            COMMA ","
+            WHITESPACE "\r\n        "
+            IDENT "succeed"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+error 49: unexpected clause ending, found LT

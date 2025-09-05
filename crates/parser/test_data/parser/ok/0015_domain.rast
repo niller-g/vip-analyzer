@@ -1,0 +1,74 @@
+SOURCE_FILE
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "s"
+    WHITESPACE "\r\n\r\n"
+    COMMENT "% Structure for tbn_hotItemChange notification\r"
+    WHITESPACE "\n"
+    COMMENT "%\r"
+    WHITESPACE "\n"
+    IMPLEMENT_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "nmtbHotItem"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "nmtbHotItem"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "nmhdr"
+                  WHITESPACE " "
+                  VAR "Hdr"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      REF_TERM
+                        IDENT "inLine"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE " "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "IdOld"
+                COMMA ","
+                WHITESPACE " "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "IdNew"
+                COMMA ","
+                WHITESPACE " "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "unsigned"
+                  WHITESPACE " "
+                  VAR "Flags"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n    "
+    COMMENT "% hicf_*\r"
+    WHITESPACE "\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

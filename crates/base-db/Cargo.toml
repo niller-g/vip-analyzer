@@ -1,0 +1,36 @@
+[package]
+name = "base-db"
+description = "Basic database traits for vip-analyzer. The concrete DB is defined by `ide`."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+la-arena.workspace = true
+dashmap.workspace = true
+salsa.workspace = true
+salsa-macros.workspace = true
+query-group.workspace = true
+rustc-hash.workspace = true
+triomphe.workspace = true
+semver.workspace = true
+tracing.workspace = true
+itertools.workspace = true
+anyhow.workspace = true
+path-slash.workspace = true
+indexmap.workspace = true
+
+# local deps
+syntax.workspace = true
+vfs.workspace = true
+span.workspace = true
+intern.workspace = true
+paths.workspace = true
+
+[lints]
+workspace = true

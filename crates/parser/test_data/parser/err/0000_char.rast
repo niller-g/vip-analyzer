@@ -1,0 +1,4 @@
+SOURCE_FILE
+  ERROR
+    IDENT "a"
+error 0: expected item, found IDENT

@@ -1,0 +1,742 @@
+// Visual Prolog Un-Grammar.
+//
+// This grammar specifies the structure of Visual Prolog's concrete syntax tree.
+// It does not specify parsing rules (ambiguities, precedence, etc are out of scope).
+// Tokens are processed -- contextual keywords are recognised, compound operators glued.
+//
+// Legend:
+//
+//   //          -- comment
+//   Name =      -- non-terminal definition
+//   'ident'     -- keyword or punct token (terminal, literal)
+//   '#ident'    -- compiler directive (terminal, literal)
+//   '&ident'    -- generic token (terminal, non-literal)
+//   A B         -- sequence
+//   A | B       -- alternation
+//   A*          -- zero or more repetition
+//   A?          -- zero or one repetition
+//   (A)         -- same as A
+//   label:A     -- suggested name for field of AST node
+
+SourceFile = 
+  Item*
+
+RecItem =
+  CondItem
+| Item
+
+Item = 
+  ClassItem
+| ImplementItem
+| InterfaceItem
+| NamespaceItem
+| IncludeItem
+| RequiresDirective
+| MessageDirective
+| ErrorDirective
+| ExportItem
+| ExternallyItem
+| OptionsItem
+| GoalItem
+
+ClassItem =
+  'monitor'? 'class' ScopeNameDecl (':' ScopeRef)? 
+    TypeBounds
+    qualifications:OpenQualifications
+    AttributeList?
+    ClassSections
+  EndClassItem
+
+EndClassItem =
+  'end' 'monitor'? 'class' ScopeNameDecl?
+
+ImplementItem =
+  'implement' ScopeNameDecl
+    TypeBounds
+    qualifications:ImplementQualification*
+    AttributeList?
+    ImplementSections
+  EndImplementItem
+
+EndImplementItem =
+  'end' 'implement' ScopeNameDecl?
+
+InterfaceItem =
+  'monitor'? 'interface' ScopeNameDecl
+    TypeBounds
+    qualifications:InterfaceQualification*
+    AttributeList?
+    InterfaceSections
+  EndInterfaceItem
+
+EndInterfaceItem =
+  'end' 'monitor'? 'interface' ScopeNameDecl?
+
+NamespaceItem = 
+  'namespace' Namespace
+
+CondItem = 
+  '#if' ItemCondition '#then'
+    Item*
+    ElseIfItem*
+    ElseItem?
+  '#endif'
+
+ElseIfItem =
+  '#elseif' ItemCondition '#then' Item*
+
+ElseItem = 
+  '#else' Item*
+
+ItemCondition = 
+  Stmt
+| ExportItem
+
+IncludeItem = 
+  '#include' StringSeq
+
+RequiresDirective = 
+  '#requires' StringSeq OrRequiresDirective*
+
+OrRequiresDirective =
+  '#orrequires' StringSeq
+
+ExportItem = 
+  '#export' (ScopeRef (',' ScopeRef)*)?
+
+ExternallyItem = 
+  '#externally' (ExternallySubject (',' ExternallySubject)*)?
+
+ExternallySubject = 
+  ScopeRef ('#from' StringOrConst)?
+
+OptionsItem = 
+  '#options' StringSeq
+
+MessageDirective = 
+  '#message' StringSeq
+
+ErrorDirective = 
+  '#error' StringSeq
+
+GoalItem =
+  'goal' Stmt? '.'
+
+ScopeNameDecl = 
+  '&ident' ('{' ScopeParams? '}')?
+
+ScopeParams = 
+  ScopeType (',' ScopeType)*
+
+ScopeRef =
+  NamespacePath? '&ident' Generics?
+
+RefTerm =
+  ScopeRef? '::'? '&ident'? Generics?
+
+ScopeType = 
+  '@' '&var'
+
+NamespacePath = 
+  '\\'? PathSegment*
+
+PathSegment =
+  '&ident' '\\'
+
+Namespace = 
+  NamespacePath '&ident'?
+
+Type = 
+  TypeKind
+
+TypeKind =
+  VarType
+| ScopeType
+| RefTerm
+| ListType
+
+VarType =
+  '&var'
+
+ListType =
+  Type '*'
+
+TypeBounds = 
+  TypeBound*
+
+TypeBound = 
+  'where' ('&var' | ScopeType) 'supports' Type
+
+ImplementQualification =
+  SupportsQualifications 
+| OpenQualifications 
+| InheritsQualifications
+
+InterfaceQualification =
+  SupportsQualifications 
+| OpenQualifications
+
+SupportsQualifications = 
+  'supports' (ScopeRef (',' ScopeRef)*)?
+
+OpenQualifications = 
+  'open' (OpenQualification (',' OpenQualification)*)?
+
+OpenQualification = 
+  ScopeRef
+| NamespacePath
+
+InheritsQualifications = 
+  'inherits' (ScopeRef (',' ScopeRef)*)?
+
+AttributeList = 
+  '[' Exprs? ']'
+
+FunctorArgs =
+  FunctorArg (',' FunctorArg)*
+
+FunctorArg = // It is ambiguous if ApplyTerm, AccessTerm or RefTerm is an expression or a statement
+  KeywordArg
+| Expr
+| AtomStmt
+
+KeywordArg =
+  ':' '&var' '=' Expr
+
+ConstantsSection = 
+  'constants' Constant*
+
+Constant = 
+  '&ident' (':' Type)? '=' Expr AttributeList? '.'
+
+DomainsSection = 
+  'domains' Domain*
+
+PredicatesFromSection =
+  'class'? 'predicates' 'from' ScopeRef ArityList?
+
+ClassPredicatesSection =
+  'class' 'predicates' ClassPredicate*
+
+PredicatesSection =
+  'predicates' Predicate*
+
+ConstructorsSection =
+  'constructors' Constructor*
+  
+PropertiesFromSection =
+  'class'? 'properties' 'from' ScopeRef ArityList?
+
+ArityList =
+  Arity (',' Arity)*
+
+ClassPropertiesSection =
+  'class' 'properties' ClassProperty*
+
+PropertiesSection =
+  'properties' Property*
+
+ClassFactsSection =
+  'class' 'facts' ('-' '&ident')? ClassFact*
+
+FactsSection =
+  'facts' ('-' '&ident')? Fact*
+
+ClausesSection =
+  'clauses' clauses:ClauseKind*
+
+ClauseKind = 
+  Clause
+| GuardClause
+
+Clause =
+  '&ident' '(' Exprs? ')' ('=' Expr)? ClauseBody? '.'
+
+ClauseBody =
+  ':-' Stmt
+
+GuardClause =
+  '&ident' 'guard' Expr '.'
+
+ResolveSection =
+  'resolve' Resolutions?
+
+Resolutions =
+  Resolution (',' Resolution)*
+
+DelegateSection =
+  'delegate' Delegates?
+
+Delegates =
+  Delegate (',' Delegate)*
+
+Domain = 
+  '&ident' Generics? '=' DomainDef '.'
+
+DomainDef = 
+  FunctorDomain
+| PredicateDomain
+| AliasDomain
+| NumericDomain 
+
+FunctorDomain =
+  ('align' Expr)? (Functor (';' Functor)*)
+
+PredicateDomain =
+  FormalParamList ReturnParam? 'suspending'? Mode? FlowPatternList? CallingConvention? AttributeList?
+
+AliasDomain =
+  Type AttributeList?
+
+NumericDomain =
+  RefTerm? (RangeDomain | BitsizeDomain | DigitsDomain)
+
+RangeDomain =
+  RangeExpr (BitsizeExpr | DigitsExpr)? AttributeList?
+
+BitsizeDomain =
+  BitsizeExpr RangeExpr? AttributeList?
+
+DigitsDomain =
+  DigitsExpr RangeExpr? AttributeList?
+
+RangeExpr =
+  '[' lhs:Expr? '..' rhs:Expr? ']'
+
+BitsizeExpr = 
+  'bitsize' Expr
+
+DigitsExpr =
+  'digits' Expr
+
+Functor =
+  Type ('(' FormalArgList? ')')? AttributeList? // The `RefTerm` here is known to always be a single identifier
+
+FormalParamList =
+	'(' (FormalParam (',' FormalParam)*)? (','? '...')? ')'
+
+FormalParam =
+  Type '&var'? AttributeList?
+
+FormalArgList =
+  FormalArg (',' FormalArg)* ','?
+
+FormalArg = 
+  Type ('&var' ('=' Expr)?)? AttributeList?
+
+Predicate =
+  '&ident' ':' PredParams CallingConvention? LinkName? TypeBounds AttributeList? '.'
+
+ClassPredicate =
+  '&ident' ':' PredParams CallingConvention? LinkName? TypeBounds AttributeList? '.'
+
+Constructor =
+  '&ident' ':' InlineParams LinkName? TypeBounds AttributeList? '.'
+
+PredParams =
+  InlineParams
+| RefTerm
+
+InlineParams =
+  '(' FormalArgList? '...'? ')' ReturnParam? PredPropertyList
+
+ReturnParam =
+  '->' TypeArg
+
+PredPropertyList =
+  PredProperty*
+
+PredProperty =
+  'suspending'? Mode FlowPatternList?
+
+Mode =
+  'erroneous' 
+| 'failure'
+| 'procedure' 
+| 'determ' 
+| 'nondeterm' 
+| 'multi'
+
+FlowPatternList = 
+  FlowPattern*
+
+FlowPattern =
+  AnyFlow
+| Flow
+
+AnyFlow = 
+  'anyflow'
+
+Flow =
+  '(' FlowArgList? ')'
+
+FlowArgList = 
+  FlowArg (',' FlowArg)*
+
+FlowArg = 
+  FunctorFlow
+| ListFlow
+| Ellipsis
+| FlowDirection
+
+FunctorFlow =
+  '&ident' Flow
+
+FlowDirection =
+  'i'
+| 'o'
+
+ListFlow = 
+  '[' FlowArgList? ('|' ('&ident' | ListFlow))? ']'
+
+CallingConvention = 
+  'language' '&ident'
+
+LinkName =  
+  'as' StringOrConst '&ident'?
+
+Arity = 
+  '&ident' ('/' '&int_number'? '...'? '->'?)?
+
+Property = 
+  '&ident' ':' Type Flow? AttributeList? '.'
+
+ClassProperty = 
+  '&ident' ':' Type Flow? AttributeList? '.'
+
+Fact = 
+  FactVar
+| FactFunctor
+
+FactVar =
+  '&ident' ':' Type (':=' (Expr | 'erroneous'))? AttributeList? '.'
+
+FactFunctor =
+  '&ident' ':' FormalParamList ('determ' | 'nondeterm' | 'single')? AttributeList? '.'
+
+
+ClassFact = 
+  ClassFactVar
+| ClassFactFunctor
+
+ClassFactVar =
+  '&ident' ':' Type (':=' (Expr | 'erroneous'))? AttributeList? '.'
+
+ClassFactFunctor =
+  '&ident' ':' FormalParamList ('determ' | 'nondeterm' | 'single')? AttributeList? '.'
+
+Delegate = 
+  PredicateDelegate
+| InterfaceDelegate
+
+PredicateDelegate = 
+  Arity 'to' '&ident'
+
+InterfaceDelegate = 
+  'interface' ScopeRef 'to' '&ident'
+
+Resolution = 
+  InterfaceResolution
+| PredicateResolution
+| ExternalPredicateResolution
+
+InterfaceResolution =
+  'interface' InterfaceRef 'from' ScopeRef
+
+InterfaceRef =
+  ScopeRef
+
+PredicateResolution =
+  Arity 'from' RefTerm
+
+ExternalPredicateResolution =
+  Arity 'externally' ('from' StringOrConst)?
+
+Generics =
+  '{' (TypeArg (',' TypeArg)*)? '}'
+
+TypeArg =
+  Type '&var'?
+
+Expr =
+  BinExpr
+| PrefixExpr
+| Ellipsis
+| VarExpr
+| ScopeType
+| ListExpr
+| ConsExpr
+| FindAllExpr
+| LambdaExpr
+| ObjectExpr
+| NumericLiteral
+| StringSeq
+| BinInclude
+| StringInclude
+| BinLiteral
+| IfTerm
+| ParenTerm
+| ApplyTerm
+| AccessTerm
+| RefTerm
+
+BinExpr =
+  lhs:Expr
+  op:(
+    '^^' | '**' | '++' | '--'
+  | '^' | '*' | '/' | 'div' | 'mod' | 'rem' | 'quot'
+  | '+' | '-' | '<<' | '>>'
+  | 'otherwise'
+  )
+  rhs:Expr
+
+PrefixExpr =
+  op:('+' | '-' | '~~') Expr
+
+AccessTerm =
+  Expr ':' RefTerm // The `RefTerm` here is known not to have generics
+
+ApplyTerm =
+  Expr '(' FunctorArgs? ('|' ApplyArg)? ')'
+
+ParenTerm =
+  '(' (Expr | Stmt) ')'
+
+Ellipsis =
+  '...'
+
+VarExpr =
+  '&var'
+
+ListExpr =
+  '[' Exprs ']'
+
+ConsExpr =
+  '[' Exprs '|' Expr ']'
+
+FindAllExpr =
+  '[' Expr '||' Stmt ']'
+
+LambdaExpr =
+  '{' ('(' Exprs ')')? ('=' Expr)? (':-' Stmt)? '}'
+
+Exprs =
+  Expr (',' Expr)*
+
+Condition =
+  Stmt
+
+IfTerm =
+  'if' Condition 'then' (Expr | Stmt)? ElseIfTerm* ElseTerm? EndIf
+
+ElseIfTerm =
+  'elseif' Condition 'then' (Expr | Stmt)?
+
+ElseTerm =
+  'else' (Expr | Stmt)?
+
+EndIf =
+  'end' 'if'
+
+ObjectExpr =
+  'implement' ':' ScopeRef (qualifications:ImplementQualification* | ClauseKind*) ImplementSections EndImplement
+
+EndImplement =
+  'end' 'implement'
+
+NumericLiteral =
+  '&int_number'
+| '&float_number'
+
+StringSeq =
+  StringPart*
+
+StringPart =
+  '&string'
+
+BinInclude =
+  '#bininclude' '(' StringSeq ')'
+
+StringInclude =
+  '#stringinclude' '(' StringSeq ')'
+
+BinLiteral =
+  '$' '[' Exprs ']'
+
+Stmt =
+  AtomStmt
+| BinStmt
+
+BinStmt =
+  lhs:Stmt op:(',' | 'and' | ';' | 'or' | 'orelse') rhs:Stmt
+
+AtomStmt =
+  CutStmt
+| ForeachStmt
+| TryStmt
+| AssignStmt
+| RelationStmt
+| InStmt
+| MatchStmt
+| ApplyTerm
+| AccessTerm
+| RefTerm
+| ParenTerm
+| IfTerm
+
+CutStmt =
+  '!'
+
+ForeachStmt =
+  'foreach' IterStmt 'do' Stmt? EndForeach
+
+IterStmt =
+  Stmt
+
+EndForeach =
+  'end' 'foreach'
+
+TryStmt =
+  'try' Stmt TryHandler* EndTry
+
+EndTry =
+  'end' 'try'
+
+TryHandler =
+  CatchHandler
+| FinallyHandler
+
+CatchHandler =
+  'catch' Expr 'do' Stmt
+
+FinallyHandler =
+  'finally' Stmt
+
+AssignStmt =
+  lhs:Expr ':=' rhs:(Expr | 'erroneous')
+
+RelationStmt =
+  lhs:Expr op:('>=' | '><' | '>' | '<>' | '<=' | '<' | '==' | '=') rhs:Expr
+
+InStmt =
+  lhs:Expr 'in' rhs:Expr
+
+MatchStmt =
+  'match' '(' ApplyArgs? ')' CaseArm* EndMatch
+
+ApplyArgs = 
+  ApplyArg (',' ApplyArg)*
+
+ApplyArg =
+  KeywordArg
+| Expr
+
+CaseArm =
+  'case' '(' Exprs ')' ClauseBody?
+
+EndMatch =
+  'end' 'match'
+
+StringOrConst = 
+  StringSeq
+| RefTerm
+
+// SECTIONS
+
+ClassSections = 
+  list:RecClassSection*
+
+RecClassSection =
+  CondClassSection
+| ClassSection
+
+ClassSection =
+  ConstantsSection
+| DomainsSection
+| PredicatesSection
+| ConstructorsSection
+| PropertiesSection
+| ErrorDirective
+| MessageDirective
+| RequiresDirective
+
+CondClassSection =
+  '#if' Stmt '#then'
+    ClassSections
+  else_if_sections:ElseIfClassSection*
+  else_section:ElseClassSection?
+  '#endif'
+
+ElseIfClassSection =
+  '#elseif' Stmt '#then' ClassSections
+
+ElseClassSection =
+  '#else' ClassSections
+
+ImplementSections =
+  list:RecImplementSection*
+
+RecImplementSection =
+  CondImplementSection
+| ImplementSection
+
+ImplementSection =
+  ConstantsSection
+| DomainsSection
+| ClassPredicatesSection
+| PredicatesSection
+| ConstructorsSection
+| ClassPropertiesSection
+| PropertiesSection
+| ClassFactsSection
+| FactsSection
+| ClausesSection
+| ResolveSection
+| DelegateSection
+| ErrorDirective
+| MessageDirective
+| RequiresDirective
+
+CondImplementSection = 
+  '#if' Stmt '#then'
+    ImplementSections
+  else_if_sections:ElseIfImplementSection*
+  else_section:ElseImplementSection?
+  '#endif'
+
+ElseIfImplementSection =
+  '#elseif' Stmt '#then' ImplementSections
+
+ElseImplementSection =
+  '#else' ImplementSections
+
+InterfaceSections = 
+  list:RecInterfaceSection*
+
+RecInterfaceSection =
+  CondInterfaceSection
+| InterfaceSection
+
+InterfaceSection =
+  ConstantsSection
+| DomainsSection
+| PredicatesFromSection
+| PropertiesFromSection
+| PredicatesSection
+| PropertiesSection
+| ErrorDirective
+| MessageDirective
+| RequiresDirective  
+
+CondInterfaceSection = 
+  '#if' Stmt '#then'
+    InterfaceSections
+  else_if_sections:ElseIfInterfaceSection*
+  else_section:ElseInterfaceSection?
+  '#endif'
+
+ElseIfInterfaceSection =
+  '#elseif' Stmt '#then' InterfaceSections
+
+ElseInterfaceSection =
+  '#else' InterfaceSections

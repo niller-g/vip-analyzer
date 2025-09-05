@@ -1,0 +1,21 @@
+[package]
+name = "toolchain"
+description = "Toolchain used in a Visual Prolog project."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+project-model.workspace = true
+
+camino.workspace = true
+
+[dev-dependencies]
+test-utils.workspace = true
+
+[lints]
+workspace = true

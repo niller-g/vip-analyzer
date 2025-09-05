@@ -1,0 +1,70 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Used for testing the extension with a local build of the LSP server (in `target/debug`).
+            "name": "Run Extension (Debug)",
+            "type": "extensionHost",
+            "request": "launch",
+            "presentation": {
+                "group": "build"
+            },
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--disable-extensions",
+                "--extensionDevelopmentPath=${workspaceFolder}/editors/code",
+                "--log niller-g.vip-analyzer:debug"
+            ],
+            "outFiles": ["${workspaceFolder}/editors/code/out/**/*.js"],
+            "preLaunchTask": "Build Server (Debug) and Extension",
+            "skipFiles": ["<node_internals>/**/*.js"],
+            "env": {
+                "__VA_LSP_SERVER_DEBUG": "${workspaceFolder}/target/debug/vip-analyzer",
+                "VIPFMT_PATH": "${workspaceFolder}/visual-prolog/vipfmt/exe64/vipfmt.exe"
+                // "VA_WAIT_DBG": "1"
+                // "VA_LOG": "INFO"
+                // "VA_PROFILE": "*"
+            }
+        },
+        {
+            // Used for testing the extension with a local build of the LSP server (in `target/release`).
+            "name": "Run Extension (Release)",
+            "type": "extensionHost",
+            "request": "launch",
+            "presentation": {
+                "group": "build"
+            },
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--disable-extensions",
+                "--extensionDevelopmentPath=${workspaceFolder}/editors/code",
+                "--log niller-g.vip-analyzer:debug"
+            ],
+            "outFiles": ["${workspaceFolder}/editors/code/out/**/*.js"],
+            "preLaunchTask": "Build Server (Release) and Extension",
+            "skipFiles": ["<node_internals>/**/*.js"],
+            "env": {
+                "__VA_LSP_SERVER_DEBUG": "${workspaceFolder}/target/release/vip-analyzer",
+                "VIPFMT_PATH": "${workspaceFolder}/visual-prolog/vipfmt/exe64/vipfmt.exe"
+            }
+        },
+        {
+            // Used to attach LLDB to a running LSP server.
+            // NOTE: Might require root permissions. For this run:
+            //
+            // `echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope`
+            //
+            // Don't forget to set `debug = 2` in `Cargo.toml` before building the server
+            "name": "Attach To Server",
+            "type": "lldb",
+            "request": "attach",
+            "presentation": {
+                "group": "debug"
+            },
+            "program": "${workspaceFolder}/target/debug/vip-analyzer",
+            "pid": "${command:pickMyProcess}",
+            "sourceLanguages": ["rust"]
+        }
+    ]
+}

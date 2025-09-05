@@ -1,0 +1,16 @@
+deb/
+exe/
+obj/
+deb64/
+exe64/
+obj64/
+
+*.prjgrd
+*.env
+
+# Bring your own ProDir
+ProDir
+
+# vipfmt is distributed as a prebuilt binary
+!vipfmt/exe
+!vipfmt/exe64

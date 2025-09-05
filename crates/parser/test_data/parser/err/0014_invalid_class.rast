@@ -1,0 +1,10 @@
+SOURCE_FILE
+  ERROR
+    END_KW "end"
+  WHITESPACE " "
+  CLASS_ITEM
+    CLASS_KW "class"
+    SCOPE_NAME_DECL
+error 0: expected item, found END_KW
+error 9: expected IDENT
+error 9: expected `end class`, found EOF

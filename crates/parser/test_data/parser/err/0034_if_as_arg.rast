@@ -1,0 +1,54 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "f"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getElem"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            APPLY_TERM
+              ACCESS_TERM
+                VAR_EXPR
+                  VAR "M"
+                COLON ":"
+                REF_TERM
+                  IDENT "set"
+              L_PAREN "("
+              WHITESPACE "\r\n            "
+              FUNCTOR_ARGS
+                IF_TERM
+                  IF_KW "if"
+                  WHITESPACE " "
+                  CONDITION
+                    REF_TERM
+                      IDENT "a"
+                  WHITESPACE " "
+                  THEN_KW "then"
+                  WHITESPACE "\r\n                "
+                  VAR_EXPR
+                    VAR "M"
+                  WHITESPACE "\r\n            "
+                  END_IF
+                    END_KW "end"
+                    WHITESPACE " "
+                    IF_KW "if"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+error 98: missing `else` branch

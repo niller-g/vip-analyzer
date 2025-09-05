@@ -1,0 +1,313 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "parameters"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE "\r\n        "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "parameters"
+              L_PAREN "("
+              WHITESPACE "\r\n            "
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                  WHITESPACE " "
+                  VAR "RuleSet"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                  WHITESPACE " "
+                  VAR "CrewSolutionName"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          STRING_SEQ
+                            STRING_PART
+                              STRING "\"\""
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                  WHITESPACE " "
+                  VAR "CostFactorVersion"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          STRING_SEQ
+                            STRING_PART
+                              STRING "\"Master\""
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "EvenAirborneHoursPenalty"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "0"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "EvenCyclesPenalty"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "0"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "boolean"
+                  WHITESPACE " "
+                  VAR "ConsiderHistoricHoursCycles"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          REF_TERM
+                            IDENT "false"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "BreakingOfrPenalty"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "500"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "TurnTimeReduction"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "0"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "boolean"
+                  WHITESPACE " "
+                  VAR "CheckBlockHours"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          REF_TERM
+                            IDENT "true"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "boolean"
+                  WHITESPACE " "
+                  VAR "CalculateBlockHours"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          REF_TERM
+                            IDENT "false"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "MaxDelay"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "0"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                  WHITESPACE " "
+                  VAR "DelayCode"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          STRING_SEQ
+                            STRING_PART
+                              STRING "\"\""
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "DelayPenalty"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "3000"
+                        R_PAREN ")"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE "\r\n            "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "integer"
+                  WHITESPACE " "
+                  VAR "DelayHourPenalty"
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "default"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          NUMERIC_LITERAL
+                            INT_NUMBER "3000"
+                        R_PAREN ")"
+                    R_BRACK "]"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

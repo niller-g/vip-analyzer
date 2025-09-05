@@ -1,0 +1,57 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "lv_item"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "lv_item"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+                  WHITESPACE " "
+                  VAR "Text"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  STRING_SEQ
+                    STRING_PART
+                      STRING "\"\""
+                  WHITESPACE " "
+                  ATTRIBUTE_LIST
+                    L_BRACK "["
+                    EXPRS
+                      REF_TERM
+                        IDENT "inline"
+                    R_BRACK "]"
+                COMMA ","
+                WHITESPACE " "
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "pointer"
+                  WHITESPACE " "
+                  VAR "PuColumns"
+              R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"

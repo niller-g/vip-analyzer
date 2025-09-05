@@ -1,0 +1,14 @@
+[attr]rust text eol=lf whitespace=tab-in-indent,trailing-space,tabwidth=4
+[attr]visual-prolog text eol=crlf whitespace=tab-in-indent,trailing-space,tabwidth=4
+
+* text=auto eol=lf
+
+*.rs rust diff=rust
+
+*.pro visual-prolog
+*.cl visual-prolog
+*.i visual-prolog
+*.pack visual-prolog
+*.ph visual-prolog
+
+visual-prolog/** linguist-vendored

@@ -1,0 +1,62 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "hello"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n        "
+        CLAUSE
+          IDENT "hello"
+          L_PAREN "("
+          R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n        "
+        CLAUSE
+          IDENT "world"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "true"
+          DOT "."
+        WHITESPACE "\r\n        "
+        CLAUSE
+          IDENT "stalker"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE " "
+            REF_TERM
+              IDENT "fail"
+          DOT "."
+        WHITESPACE "\r\n        "
+        CLAUSE
+          IDENT "look"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "true"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE " "
+            REF_TERM
+              IDENT "succeed"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

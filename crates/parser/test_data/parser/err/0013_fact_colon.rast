@@ -1,0 +1,2062 @@
+SOURCE_FILE
+  COMMENT "% Copyright\r"
+  WHITESPACE "\n\r\n"
+  GOAL_ITEM
+    GOAL_KW "goal"
+    WHITESPACE "\r\n    "
+    APPLY_TERM
+      REF_TERM
+        SCOPE_REF
+          IDENT "console"
+        COLONCOLON "::"
+        IDENT "runUtf8"
+      L_PAREN "("
+      FUNCTOR_ARGS
+        REF_TERM
+          SCOPE_REF
+            IDENT "main"
+          COLONCOLON "::"
+          IDENT "run"
+      R_PAREN ")"
+    DOT "."
+  WHITESPACE "\r\n\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "main"
+    WHITESPACE "\r\n    "
+    OPEN_QUALIFICATIONS
+      OPEN_KW "open"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "core"
+      COMMA ","
+      WHITESPACE " "
+      NAMESPACE_PATH
+        PATH_SEGMENT
+          IDENT "vip"
+          BACKSLASH "\\"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "yTree"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        NAMESPACE_PATH
+          PATH_SEGMENT
+            IDENT "pfc"
+            BACKSLASH "\\"
+          PATH_SEGMENT
+            IDENT "syntax"
+            BACKSLASH "\\"
+        IDENT "syntax"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CONSTANTS_SECTION
+        CONSTANTS_KW "constants"
+        WHITESPACE "\r\n    "
+        CONSTANT
+          IDENT "successExitCode"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              SCOPE_REF
+                IDENT "programControl"
+              COLONCOLON "::"
+              IDENT "errorCode"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "0"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CONSTANT
+          IDENT "errorExitCode"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              SCOPE_REF
+                IDENT "programControl"
+              COLONCOLON "::"
+              IDENT "errorCode"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "1"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CONSTANT
+          IDENT "exceptionExitCode"
+          WHITESPACE " "
+          COLON ":"
+          ERROR
+            COLON ":"
+            WHITESPACE " "
+            IDENT "programControl"
+            COLON ":"
+            COLON ":"
+            IDENT "errorCode"
+            WHITESPACE " "
+            EQ "="
+            WHITESPACE " "
+            INT_NUMBER "2"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_FACTS_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        FACTS_KW "facts"
+        WHITESPACE "\r\n    "
+        CLASS_FACT_VAR
+          IDENT "error"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "boolean"
+          WHITESPACE " "
+          COLONEQ ":="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "false"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLASS_FACT_VAR
+          IDENT "error1"
+          WHITESPACE " "
+          COLON ":"
+          ERROR
+            COLON ":"
+            WHITESPACE " "
+            IDENT "boolean"
+            WHITESPACE " "
+            COLON ":"
+            EQ "="
+            WHITESPACE " "
+            IDENT "false"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "run"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              ASSIGN_STMT
+                REF_TERM
+                  SCOPE_REF
+                    IDENT "vipSyntaxSem"
+                  COLONCOLON "::"
+                  IDENT "relaxedComma"
+                WHITESPACE " "
+                COLONEQ ":="
+                WHITESPACE " "
+                REF_TERM
+                  IDENT "true"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                ASSIGN_STMT
+                  REF_TERM
+                    SCOPE_REF
+                      IDENT "vipSyntaxSem"
+                    COLONCOLON "::"
+                    IDENT "parserError"
+                  WHITESPACE " "
+                  COLONEQ ":="
+                  WHITESPACE " "
+                  REF_TERM
+                    IDENT "parserErrorCallback"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                BIN_STMT
+                  RELATION_STMT
+                    VAR_EXPR
+                      VAR "Buf"
+                    WHITESPACE " "
+                    EQ "="
+                    WHITESPACE " "
+                    APPLY_TERM
+                      REF_TERM
+                        SCOPE_REF
+                          IDENT "outputStream_string"
+                        COLONCOLON "::"
+                        IDENT "new"
+                      L_PAREN "("
+                      R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE "\r\n        "
+                  TRY_STMT
+                    TRY_KW "try"
+                    WHITESPACE "\r\n            "
+                    BIN_STMT
+                      APPLY_TERM
+                        ACCESS_TERM
+                          REF_TERM
+                            SCOPE_REF
+                              IDENT "console"
+                            COLONCOLON "::"
+                            IDENT "inputStream"
+                          COLON ":"
+                          REF_TERM
+                            IDENT "streamTo"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          VAR_EXPR
+                            VAR "Buf"
+                        R_PAREN ")"
+                      COMMA ","
+                      WHITESPACE "\r\n            "
+                      BIN_STMT
+                        RELATION_STMT
+                          VAR_EXPR
+                            VAR "Source"
+                          WHITESPACE " "
+                          EQ "="
+                          WHITESPACE " "
+                          APPLY_TERM
+                            ACCESS_TERM
+                              VAR_EXPR
+                                VAR "Buf"
+                              COLON ":"
+                              REF_TERM
+                                IDENT "getString"
+                            L_PAREN "("
+                            R_PAREN ")"
+                        COMMA ","
+                        WHITESPACE "\r\n            "
+                        BIN_STMT
+                          APPLY_TERM
+                            ACCESS_TERM
+                              VAR_EXPR
+                                VAR "Buf"
+                              COLON ":"
+                              REF_TERM
+                                IDENT "close"
+                            L_PAREN "("
+                            R_PAREN ")"
+                          COMMA ","
+                          WHITESPACE "\r\n            "
+                          BIN_STMT
+                            RELATION_STMT
+                              APPLY_TERM
+                                REF_TERM
+                                  IDENT "tuple"
+                                L_PAREN "("
+                                FUNCTOR_ARGS
+                                  VAR_EXPR
+                                    VAR "SyntaxTree"
+                                  COMMA ","
+                                  WHITESPACE " "
+                                  VAR_EXPR
+                                    VAR "ParseErrors"
+                                R_PAREN ")"
+                              WHITESPACE " "
+                              EQ "="
+                              WHITESPACE " "
+                              APPLY_TERM
+                                REF_TERM
+                                  IDENT "vipParse"
+                                L_PAREN "("
+                                FUNCTOR_ARGS
+                                  VAR_EXPR
+                                    VAR "Source"
+                                R_PAREN ")"
+                            COMMA ","
+                            WHITESPACE "\r\n            "
+                            BIN_STMT
+                              APPLY_TERM
+                                ACCESS_TERM
+                                  REF_TERM
+                                    SCOPE_REF
+                                      IDENT "console"
+                                    COLONCOLON "::"
+                                    IDENT "outputStream"
+                                  COLON ":"
+                                  REF_TERM
+                                    IDENT "write"
+                                L_PAREN "("
+                                FUNCTOR_ARGS
+                                  APPLY_TERM
+                                    ACCESS_TERM
+                                      APPLY_TERM
+                                        REF_TERM
+                                          IDENT "format"
+                                        L_PAREN "("
+                                        FUNCTOR_ARGS
+                                          VAR_EXPR
+                                            VAR "SyntaxTree"
+                                          COMMA ","
+                                          WHITESPACE " "
+                                          VAR_EXPR
+                                            VAR "ParseErrors"
+                                        R_PAREN ")"
+                                      COLON ":"
+                                      REF_TERM
+                                        IDENT "getSome"
+                                    L_PAREN "("
+                                    FUNCTOR_ARGS
+                                      VAR_EXPR
+                                        VAR "Source"
+                                    R_PAREN ")"
+                                R_PAREN ")"
+                              COMMA ","
+                              WHITESPACE "\r\n            "
+                              BIN_STMT
+                                RELATION_STMT
+                                  VAR_EXPR
+                                    VAR "ExitCode"
+                                  WHITESPACE " "
+                                  EQ "="
+                                  WHITESPACE " "
+                                  IF_TERM
+                                    IF_KW "if"
+                                    WHITESPACE " "
+                                    CONDITION
+                                      RELATION_STMT
+                                        VAR_EXPR
+                                          VAR "ParseErrors"
+                                        WHITESPACE " "
+                                        EQ "="
+                                        WHITESPACE " "
+                                        REF_TERM
+                                          IDENT "false"
+                                    WHITESPACE " "
+                                    THEN_KW "then"
+                                    WHITESPACE " "
+                                    REF_TERM
+                                      IDENT "successExitCode"
+                                    WHITESPACE " "
+                                    ELSE_TERM
+                                      ELSE_KW "else"
+                                      WHITESPACE " "
+                                      REF_TERM
+                                        IDENT "errorExitCode"
+                                    WHITESPACE " "
+                                    END_IF
+                                      END_KW "end"
+                                      WHITESPACE " "
+                                      IF_KW "if"
+                                COMMA ","
+                                WHITESPACE "\r\n            "
+                                APPLY_TERM
+                                  REF_TERM
+                                    SCOPE_REF
+                                      IDENT "programControl"
+                                    COLONCOLON "::"
+                                    IDENT "setApplicationExitCode"
+                                  L_PAREN "("
+                                  FUNCTOR_ARGS
+                                    VAR_EXPR
+                                      VAR "ExitCode"
+                                  R_PAREN ")"
+                    WHITESPACE "\r\n        "
+                    CATCH_HANDLER
+                      CATCH_KW "catch"
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "E"
+                      WHITESPACE " "
+                      DO_KW "do"
+                      WHITESPACE "\r\n            "
+                      BIN_STMT
+                        APPLY_TERM
+                          ACCESS_TERM
+                            REF_TERM
+                              SCOPE_REF
+                                IDENT "console"
+                              COLONCOLON "::"
+                              IDENT "errorStream"
+                            COLON ":"
+                            REF_TERM
+                              IDENT "write"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            APPLY_TERM
+                              REF_TERM
+                                SCOPE_REF
+                                  IDENT "exceptionDump"
+                                COLONCOLON "::"
+                                IDENT "dumpToString"
+                              L_PAREN "("
+                              FUNCTOR_ARGS
+                                VAR_EXPR
+                                  VAR "E"
+                              R_PAREN ")"
+                          R_PAREN ")"
+                        COMMA ","
+                        WHITESPACE "\r\n            "
+                        BIN_STMT
+                          APPLY_TERM
+                            ACCESS_TERM
+                              REF_TERM
+                                SCOPE_REF
+                                  IDENT "console"
+                                COLONCOLON "::"
+                                IDENT "errorStream"
+                              COLON ":"
+                              REF_TERM
+                                IDENT "nl"
+                            L_PAREN "("
+                            R_PAREN ")"
+                          COMMA ","
+                          WHITESPACE "\r\n            "
+                          APPLY_TERM
+                            REF_TERM
+                              SCOPE_REF
+                                IDENT "programControl"
+                              COLONCOLON "::"
+                              IDENT "setApplicationExitCode"
+                            L_PAREN "("
+                            FUNCTOR_ARGS
+                              REF_TERM
+                                IDENT "exceptionExitCode"
+                            R_PAREN ")"
+                    WHITESPACE "\r\n        "
+                    END_TRY
+                      END_KW "end"
+                      WHITESPACE " "
+                      TRY_KW "try"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "format"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      IDENT "yTree"
+                    COLONCOLON "::"
+                    IDENT "ySyntaxTree"
+                WHITESPACE " "
+                VAR "SyntaxTree"
+              COMMA ","
+              WHITESPACE " "
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "boolean"
+                WHITESPACE " "
+                VAR "ParseErrors"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "optional"
+                    GENERICS
+                      L_CURLY "{"
+                      TYPE_ARG
+                        TYPE
+                          REF_TERM
+                            IDENT "string"
+                        WHITESPACE " "
+                        VAR "Formatted"
+                      R_CURLY "}"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "format"
+          L_PAREN "("
+          EXPRS
+            VAR_EXPR
+              VAR "SyntaxTree"
+            COMMA ","
+            WHITESPACE " "
+            REF_TERM
+              IDENT "false"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          APPLY_TERM
+            REF_TERM
+              IDENT "some"
+            L_PAREN "("
+            FUNCTOR_ARGS
+              VAR_EXPR
+                VAR "Formatted"
+            R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              APPLY_TERM
+                REF_TERM
+                  IDENT "not"
+                L_PAREN "("
+                FUNCTOR_ARGS
+                  APPLY_TERM
+                    REF_TERM
+                      IDENT "noFormat"
+                    L_PAREN "("
+                    FUNCTOR_ARGS
+                      VAR_EXPR
+                        VAR "SyntaxTree"
+                    R_PAREN ")"
+                R_PAREN ")"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                CUT_STMT
+                  EXCL "!"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                BIN_STMT
+                  RELATION_STMT
+                    VAR_EXPR
+                      VAR "Buf"
+                    WHITESPACE " "
+                    EQ "="
+                    WHITESPACE " "
+                    APPLY_TERM
+                      REF_TERM
+                        SCOPE_REF
+                          IDENT "outputStream_string"
+                        COLONCOLON "::"
+                        IDENT "new"
+                      L_PAREN "("
+                      R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE "\r\n        "
+                  BIN_STMT
+                    RELATION_STMT
+                      VAR_EXPR
+                        VAR "YTreePP"
+                      WHITESPACE " "
+                      EQ "="
+                      WHITESPACE " "
+                      APPLY_TERM
+                        REF_TERM
+                          SCOPE_REF
+                            NAMESPACE_PATH
+                              PATH_SEGMENT
+                                IDENT "vip"
+                                BACKSLASH "\\"
+                            IDENT "yTreePP"
+                          COLONCOLON "::"
+                          IDENT "new"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          VAR_EXPR
+                            VAR "Buf"
+                        R_PAREN ")"
+                    COMMA ","
+                    WHITESPACE "\r\n        "
+                    BIN_STMT
+                      APPLY_TERM
+                        ACCESS_TERM
+                          VAR_EXPR
+                            VAR "YTreePP"
+                          COLON ":"
+                          REF_TERM
+                            IDENT "pp_ySyntaxTree"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          VAR_EXPR
+                            VAR "SyntaxTree"
+                        R_PAREN ")"
+                      COMMA ","
+                      WHITESPACE "\r\n        "
+                      BIN_STMT
+                        RELATION_STMT
+                          VAR_EXPR
+                            VAR "Formatted"
+                          WHITESPACE " "
+                          EQ "="
+                          WHITESPACE " "
+                          APPLY_TERM
+                            ACCESS_TERM
+                              VAR_EXPR
+                                VAR "Buf"
+                              COLON ":"
+                              REF_TERM
+                                IDENT "getString"
+                            L_PAREN "("
+                            R_PAREN ")"
+                        COMMA ","
+                        WHITESPACE "\r\n        "
+                        APPLY_TERM
+                          ACCESS_TERM
+                            VAR_EXPR
+                              VAR "Buf"
+                            COLON ":"
+                            REF_TERM
+                              IDENT "close"
+                          L_PAREN "("
+                          R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "format"
+          L_PAREN "("
+          EXPRS
+            VAR_EXPR
+              VAR "_"
+            COMMA ","
+            WHITESPACE " "
+            VAR_EXPR
+              VAR "_"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "none"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "vipParse"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "string"
+                WHITESPACE " "
+                VAR "Source"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "tuple"
+                    GENERICS
+                      L_CURLY "{"
+                      TYPE_ARG
+                        TYPE
+                          REF_TERM
+                            SCOPE_REF
+                              IDENT "yTree"
+                            COLONCOLON "::"
+                            IDENT "ySyntaxTree"
+                        WHITESPACE " "
+                        VAR "SyntaxTree"
+                      COMMA ","
+                      WHITESPACE " "
+                      TYPE_ARG
+                        TYPE
+                          REF_TERM
+                            IDENT "boolean"
+                        WHITESPACE " "
+                        VAR "Errors"
+                      R_CURLY "}"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "vipParse"
+          L_PAREN "("
+          EXPRS
+            VAR_EXPR
+              VAR "Source"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          APPLY_TERM
+            REF_TERM
+              IDENT "tuple"
+            L_PAREN "("
+            FUNCTOR_ARGS
+              VAR_EXPR
+                VAR "YTree"
+              COMMA ","
+              WHITESPACE " "
+              REF_TERM
+                IDENT "error"
+            R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              ASSIGN_STMT
+                REF_TERM
+                  IDENT "error"
+                WHITESPACE " "
+                COLONEQ ":="
+                WHITESPACE " "
+                REF_TERM
+                  IDENT "false"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                RELATION_STMT
+                  VAR_EXPR
+                    VAR "VipParser"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  APPLY_TERM
+                    REF_TERM
+                      SCOPE_REF
+                        IDENT "vipSyntax"
+                      COLONCOLON "::"
+                      IDENT "new"
+                    L_PAREN "("
+                    FUNCTOR_ARGS
+                      REF_TERM
+                        IDENT "parserErrorCallback"
+                    R_PAREN ")"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                IF_TERM
+                  IF_KW "if"
+                  WHITESPACE " "
+                  CONDITION
+                    RELATION_STMT
+                      VAR_EXPR
+                        VAR "YTree"
+                      WHITESPACE " "
+                      EQ "="
+                      WHITESPACE " "
+                      APPLY_TERM
+                        ACCESS_TERM
+                          VAR_EXPR
+                            VAR "VipParser"
+                          COLON ":"
+                          REF_TERM
+                            IDENT "tryParse_prologUnit"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          VAR_EXPR
+                            VAR "Source"
+                        R_PAREN ")"
+                  WHITESPACE " "
+                  THEN_KW "then"
+                  WHITESPACE "\r\n        "
+                  ELSE_TERM
+                    ELSE_KW "else"
+                    WHITESPACE "\r\n            "
+                    BIN_STMT
+                      RELATION_STMT
+                        VAR_EXPR
+                          VAR "PC"
+                        WHITESPACE " "
+                        EQ "="
+                        WHITESPACE " "
+                        ACCESS_TERM
+                          VAR_EXPR
+                            VAR "VipParser"
+                          COLON ":"
+                          REF_TERM
+                            IDENT "endCursor"
+                      COMMA ","
+                      WHITESPACE "\r\n            "
+                      RELATION_STMT
+                        VAR_EXPR
+                          VAR "YTree"
+                        WHITESPACE " "
+                        EQ "="
+                        WHITESPACE " "
+                        APPLY_TERM
+                          REF_TERM
+                            SCOPE_REF
+                              NAMESPACE_PATH
+                                PATH_SEGMENT
+                                  IDENT "vip"
+                                  BACKSLASH "\\"
+                              IDENT "yTree"
+                            COLONCOLON "::"
+                            IDENT "syntaxTree"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            APPLY_TERM
+                              REF_TERM
+                                IDENT "cursor"
+                              L_PAREN "("
+                              FUNCTOR_ARGS
+                                APPLY_TERM
+                                  REF_TERM
+                                    IDENT "shortCursor"
+                                  L_PAREN "("
+                                  FUNCTOR_ARGS
+                                    STRING_SEQ
+                                      STRING_PART
+                                        STRING "\"<nofile>\""
+                                    COMMA ","
+                                    WHITESPACE " "
+                                    VAR_EXPR
+                                      VAR "PC"
+                                    COMMA ","
+                                    WHITESPACE " "
+                                    VAR_EXPR
+                                      VAR "PC"
+                                  R_PAREN ")"
+                                COMMA ","
+                                WHITESPACE " "
+                                LIST_EXPR
+                                  L_BRACK "["
+                                  R_BRACK "]"
+                                COMMA ","
+                                WHITESPACE " "
+                                LIST_EXPR
+                                  L_BRACK "["
+                                  R_BRACK "]"
+                              R_PAREN ")"
+                            COMMA ","
+                            WHITESPACE " "
+                            LIST_EXPR
+                              L_BRACK "["
+                              R_BRACK "]"
+                          R_PAREN ")"
+                  WHITESPACE "\r\n        "
+                  END_IF
+                    END_KW "end"
+                    WHITESPACE " "
+                    IF_KW "if"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "noFormat"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "ySyntaxTree"
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                MODE
+                  DETERM_KW "determ"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "noFormat"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "syntaxTree"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                CONS_EXPR
+                  L_BRACK "["
+                  EXPRS
+                    VAR_EXPR
+                      VAR "U"
+                  WHITESPACE " "
+                  PIPE "|"
+                  WHITESPACE " "
+                  VAR_EXPR
+                    VAR "_"
+                  R_BRACK "]"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              RELATION_STMT
+                APPLY_TERM
+                  REF_TERM
+                    IDENT "cursor"
+                  L_PAREN "("
+                  FUNCTOR_ARGS
+                    VAR_EXPR
+                      VAR "_"
+                    COMMA ","
+                    WHITESPACE " "
+                    VAR_EXPR
+                      VAR "PreComments"
+                    COMMA ","
+                    WHITESPACE " "
+                    VAR_EXPR
+                      VAR "_"
+                  R_PAREN ")"
+                WHITESPACE " "
+                EQ "="
+                WHITESPACE " "
+                APPLY_TERM
+                  REF_TERM
+                    IDENT "getFirstCursor_yUnit"
+                  L_PAREN "("
+                  FUNCTOR_ARGS
+                    VAR_EXPR
+                      VAR "U"
+                  R_PAREN ")"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                IN_STMT
+                  APPLY_TERM
+                    REF_TERM
+                      IDENT "comment"
+                    L_PAREN "("
+                    FUNCTOR_ARGS
+                      VAR_EXPR
+                        VAR "_"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "Comment"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "_"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "_"
+                    R_PAREN ")"
+                  WHITESPACE " "
+                  IN_KW "in"
+                  WHITESPACE " "
+                  VAR_EXPR
+                    VAR "PreComments"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                BIN_STMT
+                  RELATION_STMT
+                    VAR_EXPR
+                      VAR "_"
+                    WHITESPACE " "
+                    EQ "="
+                    WHITESPACE " "
+                    APPLY_TERM
+                      REF_TERM
+                        SCOPE_REF
+                          IDENT "string"
+                        COLONCOLON "::"
+                        IDENT "search"
+                      L_PAREN "("
+                      FUNCTOR_ARGS
+                        VAR_EXPR
+                          VAR "Comment"
+                        COMMA ","
+                        WHITESPACE " "
+                        STRING_SEQ
+                          STRING_PART
+                            STRING "\"@noformat\""
+                        COMMA ","
+                        WHITESPACE " "
+                        REF_TERM
+                          SCOPE_REF
+                            IDENT "string"
+                          COLONCOLON "::"
+                          IDENT "caseInsensitive"
+                      R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE "\r\n        "
+                  CUT_STMT
+                    EXCL "!"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "getFirstCursor_yUnit"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "yUnit"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "cursor"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yUnit"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "scope"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "SK"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          APPLY_TERM
+            REF_TERM
+              IDENT "getFirstCursor_yScopeKind"
+            L_PAREN "("
+            FUNCTOR_ARGS
+              VAR_EXPR
+                VAR "SK"
+            R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yUnit"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "prologGoal"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yUnit"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveOutsideScope"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "D"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          APPLY_TERM
+            REF_TERM
+              IDENT "getFirstCursor_yCompilerDirective"
+            L_PAREN "("
+            FUNCTOR_ARGS
+              VAR_EXPR
+                VAR "D"
+            R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yUnit"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "conditionalUnit"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yUnit"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "namespaceDeclaration"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "getFirstCursor_yScopeKind"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "yScopeKind"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "cursor"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yScopeKind"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "interfaceKind"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yScopeKind"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "classKind"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yScopeKind"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "implementKind"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "getFirstCursor_yCompilerDirective"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "yCompilerDirective"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "cursor"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveGrammarGenerate"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveInclude"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveRequire"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveError"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveMessage"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveExport"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveExternally"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "getFirstCursor_yCompilerDirective"
+          L_PAREN "("
+          EXPRS
+            APPLY_TERM
+              REF_TERM
+                IDENT "directiveOptions"
+              L_PAREN "("
+              FUNCTOR_ARGS
+                VAR_EXPR
+                  VAR "Cursor"
+                COMMA ","
+                WHITESPACE " "
+                VAR_EXPR
+                  VAR "_"
+              R_PAREN ")"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "Cursor"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "parserErrorCallback"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          REF_TERM
+            SCOPE_REF
+              NAMESPACE_PATH
+                PATH_SEGMENT
+                  IDENT "pfc"
+                  BACKSLASH "\\"
+                PATH_SEGMENT
+                  IDENT "syntax"
+                  BACKSLASH "\\"
+              IDENT "syntax"
+            COLONCOLON "::"
+            IDENT "errorCallBack"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "parserErrorCallback"
+          L_PAREN "("
+          EXPRS
+            VAR_EXPR
+              VAR "Cursor"
+            COMMA ","
+            WHITESPACE " "
+            VAR_EXPR
+              VAR "ErrorCode"
+            COMMA ","
+            WHITESPACE " "
+            VAR_EXPR
+              VAR "Message"
+            COMMA ","
+            WHITESPACE " "
+            VAR_EXPR
+              VAR "AdditionalInfo"
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              ASSIGN_STMT
+                REF_TERM
+                  IDENT "error"
+                WHITESPACE " "
+                COLONEQ ":="
+                WHITESPACE " "
+                REF_TERM
+                  IDENT "true"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                RELATION_STMT
+                  APPLY_TERM
+                    REF_TERM
+                      IDENT "cursor"
+                    L_PAREN "("
+                    FUNCTOR_ARGS
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "shortCursor"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          VAR_EXPR
+                            VAR "SourceFile"
+                          COMMA ","
+                          WHITESPACE " "
+                          VAR_EXPR
+                            VAR "StartCursor"
+                          COMMA ","
+                          WHITESPACE " "
+                          VAR_EXPR
+                            VAR "_EndCursor"
+                        R_PAREN ")"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "_"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "_"
+                    R_PAREN ")"
+                  WHITESPACE " "
+                  EQ "="
+                  WHITESPACE " "
+                  VAR_EXPR
+                    VAR "Cursor"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                BIN_STMT
+                  APPLY_TERM
+                    REF_TERM
+                      IDENT "unpackCursor"
+                    L_PAREN "("
+                    FUNCTOR_ARGS
+                      VAR_EXPR
+                        VAR "StartCursor"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "Line"
+                      COMMA ","
+                      WHITESPACE " "
+                      VAR_EXPR
+                        VAR "Pos"
+                    R_PAREN ")"
+                  COMMA ","
+                  WHITESPACE "\r\n        "
+                  BIN_STMT
+                    APPLY_TERM
+                      ACCESS_TERM
+                        REF_TERM
+                          SCOPE_REF
+                            IDENT "console"
+                          COLONCOLON "::"
+                          IDENT "errorStream"
+                        COLON ":"
+                        REF_TERM
+                          IDENT "writef"
+                      L_PAREN "("
+                      FUNCTOR_ARGS
+                        STRING_SEQ
+                          STRING_PART
+                            STRING "\"%s(%d,%d) : error c%d: %s\""
+                        COMMA ","
+                        WHITESPACE " "
+                        VAR_EXPR
+                          VAR "SourceFile"
+                        COMMA ","
+                        WHITESPACE " "
+                        VAR_EXPR
+                          VAR "Line"
+                        COMMA ","
+                        WHITESPACE " "
+                        VAR_EXPR
+                          VAR "Pos"
+                        COMMA ","
+                        WHITESPACE " "
+                        APPLY_TERM
+                          REF_TERM
+                            IDENT "convertErrorCode"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            VAR_EXPR
+                              VAR "ErrorCode"
+                          R_PAREN ")"
+                        COMMA ","
+                        WHITESPACE " "
+                        VAR_EXPR
+                          VAR "Message"
+                      R_PAREN ")"
+                    COMMA ","
+                    WHITESPACE "\r\n        "
+                    BIN_STMT
+                      IF_TERM
+                        IF_KW "if"
+                        WHITESPACE " "
+                        CONDITION
+                          RELATION_STMT
+                            STRING_SEQ
+                              STRING_PART
+                                STRING "\"\""
+                            WHITESPACE " "
+                            LTGT "<>"
+                            WHITESPACE " "
+                            VAR_EXPR
+                              VAR "AdditionalInfo"
+                        WHITESPACE " "
+                        THEN_KW "then"
+                        WHITESPACE "\r\n            "
+                        APPLY_TERM
+                          ACCESS_TERM
+                            REF_TERM
+                              SCOPE_REF
+                                IDENT "stdio"
+                              COLONCOLON "::"
+                              IDENT "errorStream"
+                            COLON ":"
+                            REF_TERM
+                              IDENT "writef"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            STRING_SEQ
+                              STRING_PART
+                                STRING "\" : %s\\n\""
+                            COMMA ","
+                            WHITESPACE " "
+                            VAR_EXPR
+                              VAR "AdditionalInfo"
+                          R_PAREN ")"
+                        WHITESPACE "\r\n        "
+                        END_IF
+                          END_KW "end"
+                          WHITESPACE " "
+                          IF_KW "if"
+                      COMMA ","
+                      WHITESPACE "\r\n        "
+                      APPLY_TERM
+                        ACCESS_TERM
+                          REF_TERM
+                            SCOPE_REF
+                              IDENT "console"
+                            COLONCOLON "::"
+                            IDENT "errorStream"
+                          COLON ":"
+                          REF_TERM
+                            IDENT "nl"
+                        L_PAREN "("
+                        R_PAREN ")"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      CLASS_PREDICATES_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        CLASS_PREDICATE
+          IDENT "convertErrorCode"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "unsigned"
+                WHITESPACE " "
+                VAR "ParserCode"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "unsigned"
+                WHITESPACE " "
+                VAR "CompilerCode"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_syntaxError"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "150"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_unexpectedEndOfText"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "173"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_invalidIntegralLiteral"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "110"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_invalidFloatingPointLiteral"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "111"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_invalidEscSequence"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "113"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_unterminatedLiteral"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "115"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_unterminatedComment"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "116"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_unexpectedCharacter"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "117"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_lowercaseIdentificatorExpected"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "155"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_uppercaseIdentificatorExpected"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "200"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_tokenExpected"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "161"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            REF_TERM
+              IDENT "errorCode_unterminatedEmbeddedSyntax"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          REF_TERM
+            IDENT "errorCode_unterminatedEmbeddedSyntax"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            CUT_STMT
+              EXCL "!"
+          DOT "."
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "convertErrorCode"
+          L_PAREN "("
+          EXPRS
+            VAR_EXPR
+              VAR "ParserCode"
+          R_PAREN ")"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          VAR_EXPR
+            VAR "ParserCode"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+      WHITESPACE " "
+      SCOPE_NAME_DECL
+        IDENT "main"
+  WHITESPACE "\r\n"
+error 262: expected type reference
+error 262: expected a constant value, found COLON
+error 354: expected a type or functor as fact type

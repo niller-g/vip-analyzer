@@ -1,0 +1,223 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "p"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              IF_TERM
+                IF_KW "if"
+                WHITESPACE " "
+                CONDITION
+                  REF_TERM
+                    IDENT "a"
+                WHITESPACE " "
+                THEN_KW "then"
+                WHITESPACE "\r\n        "
+                END_IF
+                  END_KW "end"
+                  WHITESPACE " "
+                  IF_KW "if"
+              COMMA ","
+              WHITESPACE "\r\n        \r\n        "
+              BIN_STMT
+                IF_TERM
+                  IF_KW "if"
+                  WHITESPACE " "
+                  CONDITION
+                    REF_TERM
+                      IDENT "b"
+                  WHITESPACE " "
+                  THEN_KW "then"
+                  WHITESPACE "\r\n            "
+                  REF_TERM
+                    IDENT "b"
+                  WHITESPACE "\r\n        "
+                  END_IF
+                    END_KW "end"
+                    WHITESPACE " "
+                    IF_KW "if"
+                COMMA ","
+                WHITESPACE "\r\n        \r\n        "
+                BIN_STMT
+                  IF_TERM
+                    IF_KW "if"
+                    WHITESPACE " "
+                    CONDITION
+                      REF_TERM
+                        IDENT "c"
+                    WHITESPACE " "
+                    THEN_KW "then"
+                    WHITESPACE "\r\n            "
+                    REF_TERM
+                      IDENT "d"
+                    WHITESPACE "\r\n        "
+                    ELSE_IF_TERM
+                      ELSEIF_KW "elseif"
+                      WHITESPACE " "
+                      CONDITION
+                        REF_TERM
+                          IDENT "e"
+                      WHITESPACE " "
+                      THEN_KW "then"
+                      WHITESPACE "\r\n            "
+                      REF_TERM
+                        IDENT "f"
+                    WHITESPACE "\r\n        "
+                    END_IF
+                      END_KW "end"
+                      WHITESPACE " "
+                      IF_KW "if"
+                  COMMA ","
+                  WHITESPACE "\r\n\r\n        "
+                  BIN_STMT
+                    IF_TERM
+                      IF_KW "if"
+                      WHITESPACE " "
+                      CONDITION
+                        REF_TERM
+                          IDENT "g"
+                      WHITESPACE " "
+                      THEN_KW "then"
+                      WHITESPACE "\r\n            "
+                      REF_TERM
+                        IDENT "h"
+                      WHITESPACE "\r\n        "
+                      ELSE_IF_TERM
+                        ELSEIF_KW "elseif"
+                        WHITESPACE " "
+                        CONDITION
+                          REF_TERM
+                            IDENT "i"
+                        WHITESPACE " "
+                        THEN_KW "then"
+                        WHITESPACE "\r\n            "
+                        REF_TERM
+                          IDENT "j"
+                      WHITESPACE "\r\n        "
+                      ELSE_TERM
+                        ELSE_KW "else"
+                        WHITESPACE "\r\n            "
+                        REF_TERM
+                          IDENT "k"
+                      WHITESPACE "\r\n        "
+                      END_IF
+                        END_KW "end"
+                        WHITESPACE " "
+                        IF_KW "if"
+                    COMMA ","
+                    WHITESPACE "\r\n\r\n        "
+                    BIN_STMT
+                      APPLY_TERM
+                        REF_TERM
+                          IDENT "a"
+                        L_PAREN "("
+                        FUNCTOR_ARGS
+                          IF_TERM
+                            IF_KW "if"
+                            WHITESPACE " "
+                            CONDITION
+                              REF_TERM
+                                IDENT "a"
+                            WHITESPACE " "
+                            THEN_KW "then"
+                            WHITESPACE " "
+                            END_IF
+                              END_KW "end"
+                              WHITESPACE " "
+                              IF_KW "if"
+                        R_PAREN ")"
+                      COMMA ","
+                      WHITESPACE "\r\n        "
+                      BIN_STMT
+                        APPLY_TERM
+                          REF_TERM
+                            IDENT "a"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            PAREN_TERM
+                              L_PAREN "("
+                              BIN_STMT
+                                IF_TERM
+                                  IF_KW "if"
+                                  WHITESPACE " "
+                                  CONDITION
+                                    REF_TERM
+                                      IDENT "a"
+                                  WHITESPACE " "
+                                  THEN_KW "then"
+                                  WHITESPACE " "
+                                  REF_TERM
+                                    IDENT "b"
+                                  WHITESPACE " "
+                                  ELSE_TERM
+                                    ELSE_KW "else"
+                                    WHITESPACE " "
+                                    REF_TERM
+                                      IDENT "c"
+                                  WHITESPACE " "
+                                  END_IF
+                                    END_KW "end"
+                                    WHITESPACE " "
+                                    IF_KW "if"
+                                COMMA ","
+                                WHITESPACE " "
+                                REF_TERM
+                                  IDENT "d"
+                              R_PAREN ")"
+                          R_PAREN ")"
+                        COMMA ","
+                        WHITESPACE "\r\n        "
+                        APPLY_TERM
+                          REF_TERM
+                            IDENT "a"
+                          L_PAREN "("
+                          FUNCTOR_ARGS
+                            IF_TERM
+                              IF_KW "if"
+                              WHITESPACE " "
+                              CONDITION
+                                REF_TERM
+                                  IDENT "a"
+                              WHITESPACE " "
+                              THEN_KW "then"
+                              WHITESPACE " "
+                              REF_TERM
+                                IDENT "b"
+                              WHITESPACE " "
+                              ELSE_TERM
+                                ELSE_KW "else"
+                                WHITESPACE " "
+                                BIN_STMT
+                                  REF_TERM
+                                    IDENT "a"
+                                  COMMA ","
+                                  WHITESPACE " "
+                                  REF_TERM
+                                    IDENT "b"
+                              WHITESPACE " "
+                              END_IF
+                                END_KW "end"
+                                WHITESPACE " "
+                                IF_KW "if"
+                          R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

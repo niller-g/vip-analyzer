@@ -1,0 +1,58 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n   "
+    OPEN_QUALIFICATIONS
+      OPEN_KW "open"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "a"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "b"
+        GENERICS
+          L_CURLY "{"
+          R_CURLY "}"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "c"
+        GENERICS
+          L_CURLY "{"
+          TYPE_ARG
+            TYPE
+              REF_TERM
+                IDENT "d"
+            WHITESPACE " "
+            VAR "A"
+          R_CURLY "}"
+      COMMA ","
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "d"
+        GENERICS
+          L_CURLY "{"
+          TYPE_ARG
+            TYPE
+              SCOPE_TYPE
+                AT "@"
+                VAR "T"
+          COMMA ","
+          WHITESPACE " "
+          TYPE_ARG
+            TYPE
+              REF_TERM
+                IDENT "f"
+            WHITESPACE " "
+            VAR "B"
+          R_CURLY "}"
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

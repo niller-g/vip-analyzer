@@ -1,0 +1,33 @@
+SOURCE_FILE@0..53
+  CLASS_ITEM@0..51
+    CLASS_KW@0..5 "class"
+    WHITESPACE@5..6 " "
+    SCOPE_NAME_DECL@6..8
+      IDENT@6..8 "pp"
+    WHITESPACE@8..12 "\r\n\r\n"
+    CLASS_SECTIONS@12..38
+      PREDICATES_SECTION@12..38
+        PREDICATES_KW@12..22 "predicates"
+        WHITESPACE@22..29 " \r\n    "
+        PREDICATE@29..38
+          IDENT@29..30 "p"
+          WHITESPACE@30..31 " "
+          COLON@31..32 ":"
+          WHITESPACE@32..33 " "
+          INLINE_PARAMS@33..37
+            L_PAREN@33..34 "("
+            FORMAL_ARG_LIST@34..36
+              FORMAL_ARG@34..35
+                TYPE@34..35
+                  REF_TERM@34..35
+                    IDENT@34..35 "a"
+              COMMA@35..36 ","
+            R_PAREN@36..37 ")"
+          DOT@37..38 "."
+    WHITESPACE@38..42 "\r\n\r\n"
+    END_CLASS_ITEM@42..51
+      END_KW@42..45 "end"
+      WHITESPACE@45..46 " "
+      CLASS_KW@46..51 "class"
+  WHITESPACE@51..53 "\r\n"
+error 35..36: unexpected trailing ','

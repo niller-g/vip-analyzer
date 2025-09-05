@@ -1,0 +1,144 @@
+ProjectMetaData {
+    debug_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "deb",
+        },
+    ),
+    final_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "..\\..\\..\\ProDir\\Bin2",
+        },
+    ),
+    intermediate_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "obj",
+        },
+    ),
+    library_directory: Some(
+        VariablePath {
+            variable: None,
+            path: "Lib",
+        },
+    ),
+    include_directories: IncludeDirectoryList {
+        directories: [
+            VariablePath {
+                variable: None,
+                path: ".",
+            },
+            VariablePath {
+                variable: None,
+                path: "..\\..",
+            },
+            VariablePath {
+                variable: None,
+                path: "..\\..\\commonTools\\",
+            },
+            VariablePath {
+                variable: None,
+                path: "..\\..\\..\\ProDir",
+            },
+        ],
+    },
+    item_set: Items {
+        items: [
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\cryptography\\cryptography.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\web\\json\\json.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: Some(
+                        "ProDir",
+                    ),
+                    path: "pfc\\windowsApi\\com_api\\standardInterfaces\\import\\standardInterfaces_import.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\..\\ProDir\\lib\\boostRegex.lib",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\..\\ProDir\\pfc\\environment\\environment.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\..\\ProDir\\pfc\\event\\event.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\..\\ProDir\\vip\\cpuRegisters\\cpuRegisters.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "cutsRewrite\\cutsRewrite.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "y2eTranslator\\y2yEmbeddedSyntax\\y2yEmbeddedSyntax.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "yTreeChecker\\yTreeChecker.pack",
+                },
+                resource_id: None,
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\_icons\\visual.ico",
+                },
+                resource_id: Some(
+                    "application_icon",
+                ),
+            },
+            Item {
+                filename: VariablePath {
+                    variable: None,
+                    path: "..\\..\\commonTools\\version\\vipVersion.version",
+                },
+                resource_id: Some(
+                    "idm_76",
+                ),
+            },
+        ],
+    },
+}

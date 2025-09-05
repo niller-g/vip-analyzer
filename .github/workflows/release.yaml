@@ -1,0 +1,64 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dist:
+    strategy:
+      matrix:
+        include:
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            code-target: win32-x64
+            platform: x64
+          - os: windows-latest
+            target: i686-pc-windows-msvc
+            platform: Win32
+          - os: windows-latest
+            target: aarch64-pc-windows-msvc
+            code-target: win32-arm64
+            platform: x64
+
+    name: dist (${{ matrix.target }})
+    runs-on: ${{ matrix.os }}
+    env:
+      RA_TARGET: ${{ matrix.target }}
+      CI: 1
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        run: |
+          rustup update --no-self-update stable
+          rustup target add ${{ matrix.target }}
+          rustup component add rust-src
+
+      - name: Install Node.js toolchain
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Dist
+        run: cargo dist --client-patch-version ${{ github.run_number }} --platform ${{ matrix.platform }}
+
+      - run: npm ci
+        working-directory: editors/code
+
+      - name: Package Extension (release)
+        if: github.ref == 'refs/heads/release' && matrix.code-target
+        run: npx vsce package -o "../../dist/vip-analyzer-${{ matrix.code-target }}.vsix" --target ${{ matrix.code-target }}
+        working-directory: editors/code
+
+      - name: Package Extension (nightly)
+        if: github.ref != 'refs/heads/release' && matrix.code-target
+        run: npx vsce package -o "../../dist/vip-analyzer-${{ matrix.code-target }}.vsix" --target ${{ matrix.code-target }} --pre-release
+        working-directory: editors/code
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.target }}
+          path: ./dist

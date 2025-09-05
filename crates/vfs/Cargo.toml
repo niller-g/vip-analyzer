@@ -1,0 +1,25 @@
+[package]
+name = "vfs"
+description = "A virtual file system for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+rustc-hash.workspace = true
+tracing.workspace = true
+fst = "0.4.7"
+indexmap.workspace = true
+nohash-hasher.workspace = true
+crossbeam-channel.workspace = true
+
+paths.workspace = true
+stdx.workspace = true
+
+[lints]
+workspace = true

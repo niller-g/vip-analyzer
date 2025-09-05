@@ -1,0 +1,45 @@
+on: [push, pull_request]
+
+env:
+  RUSTFLAGS: "-W deprecated" # Less restrictive because we're fuzzing
+
+jobs:
+  rust:
+    name: Rust
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: nightly
+          cache: true
+
+      - name: Install cargo-fuzz
+        run: cargo install cargo-fuzz
+
+      - name: Build fuzzer
+        run: |
+          cd crates/syntax
+          cargo +nightly fuzz build syntax-fuzz
+
+      - name: Run fuzzer
+        id: run_fuzzer
+        run: |
+          cd crates/syntax
+          cargo +nightly fuzz run syntax-fuzz -- -max_total_time=60 -max_len=256
+        continue-on-error: true
+
+      - name: Publish crash reports
+        uses: actions/upload-artifact@v4
+        if: steps.run_fuzzer.outcome != 'success'
+        with:
+          name: fuzz-crash-reports
+          path: crates/syntax/fuzz/artifacts
+
+      - name: Fail if fuzzer failed
+        if: steps.run_fuzzer.outcome != 'success'
+        run: exit 1

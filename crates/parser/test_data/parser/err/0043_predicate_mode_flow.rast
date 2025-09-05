@@ -1,0 +1,158 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p1"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                FLOW_PATTERN_LIST
+                  ANY_FLOW
+                    ANYFLOW_KW "anyflow"
+              WHITESPACE " "
+              PRED_PROPERTY
+                MODE
+                  PROCEDURE_KW "procedure"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p2"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "dom"
+            R_PAREN ")"
+          WHITESPACE " "
+          ERROR
+            IDENT "functor"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p3"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "dom"
+            R_PAREN ")"
+          WHITESPACE " "
+          ERROR
+            IDENT "functor"
+            L_PAREN "("
+            IDENT "o"
+            R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p4"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "dom"
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                FLOW_PATTERN_LIST
+                  FLOW
+                    L_PAREN "("
+                    FLOW_ARG_LIST
+                      FUNCTOR_FLOW
+                        IDENT "functor"
+                        FLOW
+                          L_PAREN "("
+                          FLOW_ARG_LIST
+                            FLOW_DIRECTION
+                              O_KW "o"
+                          R_PAREN ")"
+                    R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "p5"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "dom"
+            R_PAREN ")"
+            WHITESPACE " "
+            PRED_PROPERTY_LIST
+              PRED_PROPERTY
+                MODE
+                  PROCEDURE_KW "procedure"
+                WHITESPACE " "
+                FLOW_PATTERN_LIST
+                  FLOW
+                    L_PAREN "("
+                    FLOW_ARG_LIST
+                      FUNCTOR_FLOW
+                        IDENT "functor"
+                        FLOW
+                          L_PAREN "("
+                          FLOW_ARG_LIST
+                            FLOW_DIRECTION
+                              O_KW "o"
+                          R_PAREN ")"
+                    R_PAREN ")"
+              WHITESPACE " "
+              PRED_PROPERTY
+                SUSPENDING_KW "suspending"
+                WHITESPACE " "
+                FLOW_PATTERN_LIST
+                  FLOW
+                    L_PAREN "("
+                    FLOW_ARG_LIST
+                      FUNCTOR_FLOW
+                        IDENT "functor"
+                        FLOW
+                          L_PAREN "("
+                          FLOW_ARG_LIST
+                            FLOW_DIRECTION
+                              O_KW "o"
+                          R_PAREN ")"
+                    R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+error 69: expected `.`, found IDENT
+error 94: expected `.`, found IDENT

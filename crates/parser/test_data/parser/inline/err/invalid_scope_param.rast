@@ -1,0 +1,40 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+        ERROR
+          VAR "V"
+        COMMA ","
+        WHITESPACE " "
+        ERROR
+          IDENT "string"
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+        ERROR
+          COMMA ","
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+error 12: expected a scope-type
+error 15: expected a scope-type
+error 50: expected a scope-type

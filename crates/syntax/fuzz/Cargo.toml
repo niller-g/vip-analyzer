@@ -1,0 +1,17 @@
+[package]
+name = "syntax-fuzz"
+version = "0.0.1"
+publish = false
+edition = "2024"
+rust-version = "1.85"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+syntax = { path = ".." }
+libfuzzer-sys = "0.4.7"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]

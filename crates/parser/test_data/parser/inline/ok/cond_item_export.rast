@@ -1,0 +1,14 @@
+SOURCE_FILE
+  COND_ITEM
+    HASHIF "#if"
+    WHITESPACE " "
+    EXPORT_ITEM
+      HASHEXPORT "#export"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "someClass"
+    WHITESPACE " "
+    HASHTHEN "#then"
+    WHITESPACE "\r\n"
+    HASHENDIF "#endif"
+  WHITESPACE "\r\n"

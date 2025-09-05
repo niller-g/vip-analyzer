@@ -1,0 +1,5 @@
+SOURCE_FILE
+  ERROR
+    ERROR "#"
+    EXCL "!"
+error 0: expected item, found ERROR

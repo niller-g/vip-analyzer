@@ -1,0 +1,61 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "c"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "handleSelectionChanged"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            R_PAREN ")"
+          DOT "."
+      WHITESPACE "\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "handleSelectionChanged"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            REF_TERM
+              IDENT "model"
+          DOT "."
+        WHITESPACE " "
+        COMMENT "%\r"
+        WHITESPACE "\n    "
+        CLAUSE
+          IDENT "handleSelectionChanged"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            ACCESS_TERM
+              REF_TERM
+                IDENT "model"
+              COLON ":"
+              REF_TERM
+                IDENT "onSelectionChanged"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+      WHITESPACE " "
+      SCOPE_NAME_DECL
+        IDENT "c"

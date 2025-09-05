@@ -1,0 +1,60 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "prop"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      PROPERTIES_SECTION
+        PROPERTIES_KW "properties"
+        WHITESPACE "\r\n        "
+        PROPERTY
+          IDENT "height"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "integer"
+          DOT "."
+        WHITESPACE "\r\n        "
+        PROPERTY
+          IDENT "width"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "integer"
+          WHITESPACE " "
+          FLOW
+            L_PAREN "("
+            FLOW_ARG_LIST
+              FLOW_DIRECTION
+                I_KW "i"
+            R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n        "
+        PROPERTY
+          IDENT "name"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "string"
+          WHITESPACE " "
+          FLOW
+            L_PAREN "("
+            FLOW_ARG_LIST
+              FLOW_DIRECTION
+                O_KW "o"
+            R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

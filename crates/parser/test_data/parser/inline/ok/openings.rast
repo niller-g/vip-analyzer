@@ -1,0 +1,31 @@
+SOURCE_FILE
+  INTERFACE_ITEM
+    INTERFACE_KW "interface"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    OPEN_QUALIFICATIONS
+      OPEN_KW "open"
+      WHITESPACE " "
+      SCOPE_REF
+        IDENT "core"
+      COMMA ","
+      WHITESPACE " "
+      NAMESPACE_PATH
+        PATH_SEGMENT
+          IDENT "pfc"
+          BACKSLASH "\\"
+        PATH_SEGMENT
+          IDENT "log"
+          BACKSLASH "\\"
+      COMMA ","
+      WHITESPACE " "
+      NAMESPACE_PATH
+        BACKSLASH "\\"
+    WHITESPACE " "
+    END_INTERFACE_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      INTERFACE_KW "interface"
+  WHITESPACE "\r\n"

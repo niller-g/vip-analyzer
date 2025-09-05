@@ -1,0 +1,40 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "c"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "unused"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " \r\n        "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "d"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"

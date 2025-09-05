@@ -1,0 +1,948 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom01"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom02"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom03"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom04"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom05"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom06"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom07"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom08"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom09"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom09"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom010"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom11"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom12"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom13"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom14"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom14"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom15"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom16"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib1"
+                R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom17"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom18"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom19"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom20"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom21"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom22"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom23"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom24"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom25"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom26"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            ALIGN_KW "align"
+            WHITESPACE " "
+            NUMERIC_LITERAL
+              INT_NUMBER "1"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom27"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom28"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "b"
+              L_PAREN "("
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "inline"
+                R_BRACK "]"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "tail"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    REF_TERM
+                      IDENT "string"
+              R_PAREN ")"
+              WHITESPACE " "
+              ATTRIBUTE_LIST
+                L_BRACK "["
+                EXPRS
+                  REF_TERM
+                    IDENT "tail_attrib2"
+                R_BRACK "]"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"

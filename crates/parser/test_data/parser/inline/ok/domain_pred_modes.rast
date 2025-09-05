@@ -1,0 +1,86 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              PROCEDURE_KW "procedure"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              ERRONEOUS_KW "erroneous"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              FAILURE_KW "failure"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              NONDETERM_KW "nondeterm"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "b"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          PREDICATE_DOMAIN
+            FORMAL_PARAM_LIST
+              L_PAREN "("
+              R_PAREN ")"
+            WHITESPACE " "
+            MODE
+              MULTI_KW "multi"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

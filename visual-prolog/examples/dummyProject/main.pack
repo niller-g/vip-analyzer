@@ -1,0 +1,8 @@
+% own pack
+#include @"main.ph"
+% privately used packages
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\gui\gui.ph"
+#include @"TaskWindow\TaskWindow.ph"
+% implementations
+#include @"main.pro"

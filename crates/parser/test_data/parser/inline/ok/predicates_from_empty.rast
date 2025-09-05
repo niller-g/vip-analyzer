@@ -1,0 +1,23 @@
+SOURCE_FILE
+  INTERFACE_ITEM
+    INTERFACE_KW "interface"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "bar"
+    WHITESPACE "\r\n    "
+    INTERFACE_SECTIONS
+      PREDICATES_FROM_SECTION
+        CLASS_KW "class"
+        WHITESPACE " "
+        PREDICATES_KW "predicates"
+        WHITESPACE " "
+        FROM_KW "from"
+        WHITESPACE " "
+        SCOPE_REF
+          IDENT "lib"
+    WHITESPACE "\r\n"
+    END_INTERFACE_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      INTERFACE_KW "interface"
+  WHITESPACE "\r\n"

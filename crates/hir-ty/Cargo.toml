@@ -1,0 +1,25 @@
+[package]
+name = "hir-ty"
+description = "The type system for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+base-db.workspace = true
+hir-def.workspace = true
+tracing.workspace = true
+query-group.workspace = true
+salsa.workspace = true
+salsa-macros.workspace = true
+
+triomphe.workspace = true
+la-arena.workspace = true
+
+[lints]
+workspace = true

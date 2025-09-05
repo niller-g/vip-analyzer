@@ -1,0 +1,24 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    IMPLEMENT_SECTIONS
+      FACTS_SECTION
+        FACTS_KW "facts"
+        WHITESPACE " "
+        FACT_VAR
+          IDENT "b"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          DOT "."
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+error 21: expected a type or functor as fact type

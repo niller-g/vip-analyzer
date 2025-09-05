@@ -1,0 +1,20 @@
+[package]
+name = "intern"
+description = "Global `Arc`-based object interning infrastructure for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+dashmap.workspace = true
+hashbrown.workspace = true
+rustc-hash.workspace = true
+triomphe.workspace = true
+
+[lints]
+workspace = true

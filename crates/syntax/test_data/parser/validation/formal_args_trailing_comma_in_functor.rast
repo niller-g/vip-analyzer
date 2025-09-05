@@ -1,0 +1,54 @@
+SOURCE_FILE@0..74
+  CLASS_ITEM@0..72
+    CLASS_KW@0..5 "class"
+    WHITESPACE@5..6 " "
+    SCOPE_NAME_DECL@6..7
+      IDENT@6..7 "a"
+    WHITESPACE@7..11 "\r\n\r\n"
+    CLASS_SECTIONS@11..59
+      DOMAINS_SECTION@11..59
+        DOMAINS_KW@11..18 "domains"
+        WHITESPACE@18..24 "\r\n    "
+        DOMAIN@24..59
+          IDENT@24..25 "b"
+          WHITESPACE@25..26 " "
+          EQ@26..27 "="
+          WHITESPACE@27..28 " "
+          FUNCTOR_DOMAIN@28..58
+            FUNCTOR@28..34
+              TYPE@28..31
+                REF_TERM@28..31
+                  IDENT@28..31 "bar"
+              L_PAREN@31..32 "("
+              FORMAL_ARG_LIST@32..33
+                COMMA@32..33 ","
+              R_PAREN@33..34 ")"
+            SEMICOLON@34..35 ";"
+            WHITESPACE@35..45 "\r\n        "
+            FUNCTOR@45..58
+              TYPE@45..48
+                REF_TERM@45..48
+                  IDENT@45..48 "foo"
+              L_PAREN@48..49 "("
+              FORMAL_ARG_LIST@49..57
+                FORMAL_ARG@49..52
+                  TYPE@49..52
+                    REF_TERM@49..52
+                      IDENT@49..52 "str"
+                COMMA@52..53 ","
+                FORMAL_ARG@53..56
+                  TYPE@53..56
+                    REF_TERM@53..56
+                      IDENT@53..56 "int"
+                COMMA@56..57 ","
+              R_PAREN@57..58 ")"
+          DOT@58..59 "."
+    WHITESPACE@59..63 "\r\n\r\n"
+    END_CLASS_ITEM@63..72
+      END_KW@63..66 "end"
+      WHITESPACE@66..67 " "
+      CLASS_KW@67..72 "class"
+  WHITESPACE@72..74 "\r\n"
+error 33..33: expected type reference
+error 32..33: unexpected trailing ','
+error 56..57: unexpected trailing ','

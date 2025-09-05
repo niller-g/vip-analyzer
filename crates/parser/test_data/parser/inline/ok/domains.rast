@@ -1,0 +1,110 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "dom"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                IDENT "something"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "dom2"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  IDENT "core"
+                COLONCOLON "::"
+                IDENT "string"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "dom3"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "bar"
+              L_PAREN "("
+              R_PAREN ")"
+          DOT "."
+        WHITESPACE "\r\n        "
+        DOMAIN
+          IDENT "dom"
+          GENERICS
+            L_CURLY "{"
+            TYPE_ARG
+              TYPE
+                VAR_TYPE
+                  VAR "A"
+            R_CURLY "}"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          FUNCTOR_DOMAIN
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "bar"
+              L_PAREN "("
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "foo"
+              L_PAREN "("
+              FORMAL_ARG_LIST
+                FORMAL_ARG
+                  TYPE
+                    VAR_TYPE
+                      VAR "A"
+              R_PAREN ")"
+            SEMICOLON ";"
+            WHITESPACE " "
+            FUNCTOR
+              TYPE
+                REF_TERM
+                  IDENT "baz"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

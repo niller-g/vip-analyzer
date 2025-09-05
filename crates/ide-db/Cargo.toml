@@ -1,0 +1,40 @@
+[package]
+name = "ide-db"
+description = "Core data structure representing IDE state for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+base-db.workspace = true
+parser.workspace = true
+syntax.workspace = true
+stdx.workspace = true
+hir.workspace = true
+span.workspace = true
+vfs.workspace = true
+
+arrayvec.workspace = true
+rayon.workspace = true
+triomphe.workspace = true
+line-index.workspace = true
+rustc-hash.workspace = true
+indexmap.workspace = true
+tracing.workspace = true
+bitflags.workspace = true
+itertools.workspace = true
+nohash-hasher.workspace = true
+crossbeam-channel.workspace = true
+salsa.workspace = true
+salsa-macros.workspace = true
+query-group.workspace = true
+fst = { version = "0.4.7", default-features = false }
+cov-mark = "2.0.0-pre.1"
+
+[lints]
+workspace = true

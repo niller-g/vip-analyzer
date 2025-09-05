@@ -1,0 +1,41 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "pp"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE " "
+        PREDICATE
+          IDENT "p"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "a"
+              COMMA ","
+              WHITESPACE " "
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+              WHITESPACE " "
+              ERROR
+                PLUS "+"
+            R_PAREN ")"
+          DOT "."
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"
+error 29: expected `,`, found PLUS

@@ -1,0 +1,31 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE " "
+    CLASS_SECTIONS
+      CONSTANTS_SECTION
+        CONSTANTS_KW "constants"
+        WHITESPACE " "
+        CONSTANT
+          IDENT "a"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          TYPE
+            REF_TERM
+              IDENT "integer"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_LITERAL
+            INT_NUMBER "1"
+          DOT "."
+    WHITESPACE " "
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

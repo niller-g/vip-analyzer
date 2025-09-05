@@ -1,0 +1,59 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              APPLY_TERM
+                REF_TERM
+                  IDENT "a"
+                L_PAREN "("
+                R_PAREN ")"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              RELATION_STMT
+                VAR_EXPR
+                  VAR "_"
+                WHITESPACE " "
+                EQ "="
+                WHITESPACE " "
+                BIN_EXPR
+                  NUMERIC_LITERAL
+                    INT_NUMBER "1"
+                  WHITESPACE " "
+                  PLUS "+"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "2"
+              ERROR
+                COMMA ","
+      WHITESPACE "\r\n\r\n"
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "c"
+          L_PAREN "("
+          R_PAREN ")"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+error 68: expected statement after COMMA
+error 68: unexpected clause ending, found CLAUSES_KW

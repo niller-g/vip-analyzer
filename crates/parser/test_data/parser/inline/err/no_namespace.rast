@@ -1,0 +1,5 @@
+SOURCE_FILE
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+  WHITESPACE "\r\n"
+error 9: expected a namespace

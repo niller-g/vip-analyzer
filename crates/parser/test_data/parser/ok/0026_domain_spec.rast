@@ -1,0 +1,43 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE " "
+        DOMAIN
+          IDENT "ratio"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          NUMERIC_DOMAIN
+            TYPE
+              REF_TERM
+                IDENT "real"
+            WHITESPACE " "
+            DIGITS_DOMAIN
+              DIGITS_EXPR
+                DIGITS_KW "digits"
+                WHITESPACE " "
+                REF_TERM
+                  IDENT "maxFloatDigits"
+              WHITESPACE " "
+              RANGE_EXPR
+                L_BRACK "["
+                NUMERIC_LITERAL
+                  INT_NUMBER "0"
+                DOTDOT ".."
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+                R_BRACK "]"
+          DOT "."
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

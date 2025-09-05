@@ -1,0 +1,448 @@
+{
+    "name": "vip-analyzer",
+    "displayName": "vip-analyzer",
+    "description": "Visual Prolog language support for Visual Studio Code",
+    "private": true,
+    "icon": "icon.png",
+    "version": "0.5.0-dev",
+    "releaseTag": null,
+    "publisher": "niller-g",
+    "type": "commonjs",
+    "repository": {
+        "url": "https://github.com/niller-g/vip-analyzer",
+        "type": "git"
+    },
+    "license": "MIT OR Apache-2.0",
+    "keywords": [
+        "vip",
+        "visual prolog",
+        "prolog"
+    ],
+    "categories": [
+        "Formatters",
+        "Programming Languages"
+    ],
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": false,
+            "description": "vip-analyzer invokes binaries set up by its configuration as well as the VIP toolchain's binaries. A malicious actor could exploit this to run arbitrary code on your machine."
+        }
+    },
+    "engines": {
+        "vscode": "^1.93.0"
+    },
+    "enabledApiProposals": [],
+    "scripts": {
+        "vscode:prepublish": "npm run build-base -- --minify",
+        "package": "vsce package -o vip-analyzer.vsix",
+        "build-base": "esbuild ./src/main.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node --target=node16",
+        "build": "npm run build-base -- --sourcemap",
+        "watch": "npm run build-base -- --sourcemap --watch",
+        "format": "node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --write",
+        "format:check": "node --experimental-strip-types node_modules/prettier/bin/prettier.cjs . --check",
+        "lint": "eslint .",
+        "lint:fix": "npm run lint -- --fix",
+        "typecheck": "tsc",
+        "pretest": "npm run typecheck && npm run build",
+        "test": "node ./out/tests/runTests.js"
+    },
+    "dependencies": {
+        "@hpcc-js/wasm": "^2.22.4",
+        "anser": "^2.3.2",
+        "d3": "^7.9.0",
+        "d3-graphviz": "^5.6.0",
+        "jiti": "^2.4.2",
+        "vscode-languageclient": "^9.0.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "@stylistic/eslint-plugin": "^4.1.0",
+        "@stylistic/eslint-plugin-js": "^4.1.0",
+        "@tsconfig/strictest": "^2.0.5",
+        "@types/node": "~22.13.4",
+        "@types/vscode": "~1.93.0",
+        "@typescript-eslint/eslint-plugin": "^8.25.0",
+        "@typescript-eslint/parser": "^8.25.0",
+        "@vscode/test-electron": "^2.4.1",
+        "@vscode/vsce": "^3.2.2",
+        "esbuild": "^0.25.0",
+        "eslint": "^9.21.0",
+        "eslint-config-prettier": "^10.0.2",
+        "eslint-define-config": "^2.1.0",
+        "ovsx": "0.10.1",
+        "prettier": "^3.5.2",
+        "tslib": "^2.8.1",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.25.0"
+    },
+    "activationEvents": [
+        "workspaceContains:{,*/,*/*/}*.vipprj"
+    ],
+    "main": "./out/main",
+    "contributes": {
+        "languages": [
+            {
+                "id": "vip",
+                "extensions": [
+                    ".pro",
+                    ".i",
+                    ".cl",
+                    ".ph",
+                    ".pack"
+                ],
+                "aliases": [
+                    "Visual Prolog"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "ra_syntax_tree",
+                "extensions": [
+                    ".rast"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vip",
+                "scopeName": "source.vip",
+                "path": "./grammars/vip.tmGrammar.json"
+            },
+            {
+                "language": "ra_syntax_tree",
+                "scopeName": "source.ra_syntax_tree",
+                "path": "./grammars/ra_syntax_tree.tmGrammar.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "vip-analyzer.viewFileText",
+                "title": "View File Text (as seen by the server)",
+                "category": "vip-analyzer (debug command)"
+            },
+            {
+                "command": "vip-analyzer.reloadWorkspace",
+                "title": "Reload workspace",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.restartServer",
+                "title": "Restart server",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.startServer",
+                "title": "Start server",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.stopServer",
+                "title": "Stop server",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.serverVersion",
+                "title": "Show VA Version",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.cancelFlycheck",
+                "title": "Cancel running flychecks",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.runFlycheck",
+                "title": "Run flycheck",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.clearFlycheck",
+                "title": "Clear flycheck diagnostics",
+                "category": "vip-analyzer"
+            },
+            {
+                "command": "vip-analyzer.syntaxTreeReveal",
+                "title": "Reveal Syntax Element",
+                "icon": "$(search)",
+                "category": "vip-analyzer (syntax tree)"
+            },
+            {
+                "command": "vip-analyzer.syntaxTreeCopy",
+                "title": "Copy",
+                "icon": "$(copy)",
+                "category": "vip-analyzer (syntax tree)"
+            },
+            {
+                "command": "vip-analyzer.syntaxTreeHideWhitespace",
+                "title": "Hide Whitespace",
+                "icon": "$(filter)",
+                "category": "vip-analyzer (syntax tree)"
+            },
+            {
+                "command": "vip-analyzer.syntaxTreeShowWhitespace",
+                "title": "Show Whitespace",
+                "icon": "$(filter-filled)",
+                "category": "vip-analyzer (syntax tree)"
+            },
+            {
+                "command": "vip-analyzer.toggleCheckOnSave",
+                "title": "Toggle Check on Save",
+                "category": "vip-analyzer"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "vip-analyzer.viewFileText",
+                    "when": "inVipProject"
+                },
+                {
+                    "command": "vip-analyzer.reloadWorkspace",
+                    "when": "inVipProject"
+                },
+                {
+                    "command": "vip-analyzer.restartServer",
+                    "when": "inVipProject"
+                },
+                {
+                    "command": "vip-analyzer.serverVersion",
+                    "when": "inVipProject"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeReveal",
+                    "when": "false"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeCopy",
+                    "when": "false"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeHideWhitespace",
+                    "when": "false"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeShowWhitespace",
+                    "when": "false"
+                }
+            ],
+            "view/title": [
+                {
+                    "command": "vip-analyzer.syntaxTreeHideWhitespace",
+                    "group": "navigation",
+                    "when": "view == vipSyntaxTree && !vipSyntaxTree.hideWhitespace"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeShowWhitespace",
+                    "group": "navigation",
+                    "when": "view == vipSyntaxTree && vipSyntaxTree.hideWhitespace"
+                }
+            ],
+            "view/item/context": [
+                {
+                    "command": "vip-analyzer.syntaxTreeCopy",
+                    "group": "inline",
+                    "when": "view == vipSyntaxTree"
+                },
+                {
+                    "command": "vip-analyzer.syntaxTreeReveal",
+                    "group": "inline",
+                    "when": "view == vipSyntaxTree"
+                }
+            ]
+        },
+        "views": {
+            "vipSyntaxTreeContainer": [
+                {
+                    "icon": "$(file-code)",
+                    "id": "vipSyntaxTree",
+                    "name": "VIP Syntax Tree",
+                    "when": "inVipProject && config.vip-analyzer.showSyntaxTree"
+                }
+            ]
+        },
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "vipSyntaxTreeContainer",
+                    "title": "VIP Syntax Tree",
+                    "icon": "$(list-tree)"
+                }
+            ]
+        },
+        "configuration": [
+            {
+                "title": "general",
+                "properties": {
+                    "vip-analyzer.initializeStopped": {
+                        "markdownDescription": "Do not start vip-analyzer server when the extension is activated.",
+                        "default": false,
+                        "type": "boolean"
+                    },
+                    "vip-analyzer.showSyntaxTree": {
+                        "markdownDescription": "Whether to show the syntax tree view.",
+                        "default": false,
+                        "type": "boolean"
+                    }
+                }
+            },
+            {
+                "title": "statusBar",
+                "properties": {
+                    "vip-analyzer.statusBar.clickAction": {
+                        "type": "string",
+                        "enum": [
+                            "stopServer",
+                            "openLogs"
+                        ],
+                        "enumDescriptions": [
+                            "Stop Server",
+                            "Open Logs"
+                        ],
+                        "default": "openLogs",
+                        "markdownDescription": "Action to run when clicking the extension status bar item."
+                    },
+                    "vip-analyzer.statusBar.showStatusBar": {
+                        "markdownDescription": "When to show the extension status bar.\n\n`\"always\"` Always show the status bar.\n\n`\"never\"` Never show the status bar.\n\n`{ documentSelector: <DocumentSelector>[] }` Show the status bar if the open file matches any of the given document selectors.\n\nSee [VS Code -- DocumentSelector](https://code.visualstudio.com/api/references/document-selector) for more information.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "always",
+                                    "never"
+                                ]
+                            },
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "documentSelector": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "language": {
+                                                    "type": "string"
+                                                },
+                                                "notebookType": {
+                                                    "type": "string"
+                                                },
+                                                "scheme": {
+                                                    "type": "string"
+                                                },
+                                                "pattern": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "default": {
+                            "documentSelector": [
+                                {
+                                    "language": "vip"
+                                },
+                                {
+                                    "pattern": "**/*.{vipprj,pro,i,cl,ph,pack}"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "title": "$generated-start"
+            },
+            {
+                "title": "cachePriming",
+                "properties": {
+                    "vip-analyzer.cachePriming.enable": {
+                        "markdownDescription": "Warm up caches on project load.",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                }
+            },
+            {
+                "title": "cachePriming",
+                "properties": {
+                    "vip-analyzer.cachePriming.numThreads": {
+                        "markdownDescription": "How many worker threads to handle priming caches. The default `0` means to pick automatically.",
+                        "default": "physical",
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 255
+                            },
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "physical",
+                                    "logical"
+                                ],
+                                "enumDescriptions": [
+                                    "Use the number of physical cores",
+                                    "Use the number of logical cores"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "title": "general",
+                "properties": {
+                    "vip-analyzer.checkOnSave": {
+                        "markdownDescription": "Run the check command for diagnostics on save.",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                }
+            },
+            {
+                "title": "general",
+                "properties": {
+                    "vip-analyzer.numThreads": {
+                        "markdownDescription": "How many worker threads in the main loop. The default `null` means to pick automatically.",
+                        "default": null,
+                        "anyOf": [
+                            {
+                                "type": "null"
+                            },
+                            {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 255
+                            },
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "physical",
+                                    "logical"
+                                ],
+                                "enumDescriptions": [
+                                    "Use the number of physical cores",
+                                    "Use the number of logical cores"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "title": "workspace",
+                "properties": {
+                    "vip-analyzer.workspace.ideVariables": {
+                        "markdownDescription": "Path variables available per VIP project.",
+                        "default": {},
+                        "type": "object"
+                    }
+                }
+            },
+            {
+                "title": "$generated-end"
+            }
+        ]
+    }
+}

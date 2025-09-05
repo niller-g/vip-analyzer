@@ -1,0 +1,7 @@
+SOURCE_FILE
+  NAMESPACE_ITEM
+    NAMESPACE_KW "namespace"
+    WHITESPACE " "
+    NAMESPACE
+      NAMESPACE_PATH
+        BACKSLASH "\\"

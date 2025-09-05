@@ -1,0 +1,10 @@
+% own pack
+#include @"taskWindow\Toolbars\Toolbars.ph"
+% privately used packages
+#include @"pfc\gui\controls\statusBarControl\statusBarControl.ph"
+#include @"pfc\gui\statusBar\statusBar.ph"
+#include @"pfc\resourceIdentifiers.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"pfc\vpi\vpiToolbar\vpiToolbar.ph"
+% implementations
+#include @"taskWindow\Toolbars\projectToolbar.pro"

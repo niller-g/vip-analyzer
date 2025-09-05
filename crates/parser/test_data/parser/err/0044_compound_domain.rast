@@ -1,0 +1,38 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "someDomain"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "scope"
+                COLONCOLON "::"
+                IDENT "member"
+          ERROR
+            SEMICOLON ";"
+            WHITESPACE " "
+            IDENT "bar"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+error 53: expected `.` to end domain definition

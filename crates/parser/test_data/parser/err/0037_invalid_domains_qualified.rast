@@ -1,0 +1,3519 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom046"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom047"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom048"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom049"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom050"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom051"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom052"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom054"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom055"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom056"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom057"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom058"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom059"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom060"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom091"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom092"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom093"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom094"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom095"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom096"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom097"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom099"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom100"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom101"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom102"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom103"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom104"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom105"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom046"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom047"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom048"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom049"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom050"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom051"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom052"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom054"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom055"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom056"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom057"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom058"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom059"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom060"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom091"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom092"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom093"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom094"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom095"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom096"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom097"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom099"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom100"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom101"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom102"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom103"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom104"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom105"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom046"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom047"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom048"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom049"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom050"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom051"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom052"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom054"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom055"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom056"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom057"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom058"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom059"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom060"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  REF_TERM
+                    SCOPE_REF
+                      NAMESPACE_PATH
+                        PATH_SEGMENT
+                          IDENT "ns"
+                          BACKSLASH "\\"
+                      IDENT "b"
+                    COLONCOLON "::"
+                    IDENT "c"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom091"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom092"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom093"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom094"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom095"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom096"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom097"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom099"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom100"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom101"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom102"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom103"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom104"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom105"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              LIST_TYPE
+                TYPE
+                  LIST_TYPE
+                    TYPE
+                      REF_TERM
+                        SCOPE_REF
+                          NAMESPACE_PATH
+                            PATH_SEGMENT
+                              IDENT "ns"
+                              BACKSLASH "\\"
+                          IDENT "b"
+                        COLONCOLON "::"
+                        IDENT "c"
+                    STAR "*"
+                STAR "*"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+      WHITESPACE "\r\n\r\n"
+      DOMAINS_SECTION
+        DOMAINS_KW "domains"
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom001"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom002"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom003"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom004"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom005"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom006"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom007"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "    \r\n    "
+        DOMAIN
+          IDENT "dom009"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "1"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "2"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom010"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "3"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "4"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            BITSIZE_KW "bitsize"
+            WHITESPACE " "
+            INT_NUMBER "5"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom011"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ATTRIBUTE_LIST
+              L_BRACK "["
+              EXPRS
+                NUMERIC_LITERAL
+                  INT_NUMBER "6"
+              ERROR
+                DOTDOT ".."
+                INT_NUMBER "7"
+              R_BRACK "]"
+          WHITESPACE " "
+          ERROR
+            DIGITS_KW "digits"
+            WHITESPACE " "
+            INT_NUMBER "8"
+            WHITESPACE " "
+            L_BRACK "["
+            IDENT "inline"
+            R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom012"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "9"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom013"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              BITSIZE_DOMAIN
+                BITSIZE_EXPR
+                  BITSIZE_KW "bitsize"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "10"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "11"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "12"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom014"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "13"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+        WHITESPACE "\r\n    "
+        DOMAIN
+          IDENT "dom015"
+          WHITESPACE " "
+          EQ "="
+          WHITESPACE " "
+          ALIAS_DOMAIN
+            TYPE
+              REF_TERM
+                SCOPE_REF
+                  NAMESPACE_PATH
+                    PATH_SEGMENT
+                      IDENT "ns"
+                      BACKSLASH "\\"
+                  IDENT "b"
+            WHITESPACE " "
+            ERROR
+              DIGITS_DOMAIN
+                DIGITS_EXPR
+                  DIGITS_KW "digits"
+                  WHITESPACE " "
+                  NUMERIC_LITERAL
+                    INT_NUMBER "14"
+                WHITESPACE " "
+                RANGE_EXPR
+                  L_BRACK "["
+                  NUMERIC_LITERAL
+                    INT_NUMBER "15"
+                  DOTDOT ".."
+                  NUMERIC_LITERAL
+                    INT_NUMBER "16"
+                  R_BRACK "]"
+                WHITESPACE " "
+                ATTRIBUTE_LIST
+                  L_BRACK "["
+                  EXPRS
+                    REF_TERM
+                      IDENT "inline"
+                  R_BRACK "]"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+error 38: expected ']' to end attributes
+error 63: expected ']' to end attributes
+error 67: expected `.` to end domain definition
+error 98: expected ']' to end attributes
+error 102: expected `.` to end domain definition
+error 263: expected ']' to end attributes
+error 267: expected `.` to end domain definition
+error 297: expected ']' to end attributes
+error 301: expected `.` to end domain definition
+error 341: expected ']' to end attributes
+error 345: expected `.` to end domain definition
+error 563: expected ']' to end attributes
+error 589: expected ']' to end attributes
+error 593: expected `.` to end domain definition
+error 625: expected ']' to end attributes
+error 629: expected `.` to end domain definition
+error 795: expected ']' to end attributes
+error 799: expected `.` to end domain definition
+error 830: expected ']' to end attributes
+error 834: expected `.` to end domain definition
+error 875: expected ']' to end attributes
+error 879: expected `.` to end domain definition
+error 1103: expected ']' to end attributes
+error 1131: expected ']' to end attributes
+error 1135: expected `.` to end domain definition
+error 1169: expected ']' to end attributes
+error 1173: expected `.` to end domain definition
+error 1349: expected ']' to end attributes
+error 1353: expected `.` to end domain definition
+error 1386: expected ']' to end attributes
+error 1390: expected `.` to end domain definition
+error 1433: expected ']' to end attributes
+error 1437: expected `.` to end domain definition
+error 1670: expected ']' to end attributes
+error 1699: expected ']' to end attributes
+error 1703: expected `.` to end domain definition
+error 1738: expected ']' to end attributes
+error 1742: expected `.` to end domain definition
+error 1923: expected ']' to end attributes
+error 1927: expected `.` to end domain definition
+error 1961: expected ']' to end attributes
+error 1965: expected `.` to end domain definition
+error 2009: expected ']' to end attributes
+error 2013: expected `.` to end domain definition
+error 2252: expected ']' to end attributes
+error 2283: expected ']' to end attributes
+error 2287: expected `.` to end domain definition
+error 2324: expected ']' to end attributes
+error 2328: expected `.` to end domain definition
+error 2519: expected ']' to end attributes
+error 2523: expected `.` to end domain definition
+error 2559: expected ']' to end attributes
+error 2563: expected `.` to end domain definition
+error 2609: expected ']' to end attributes
+error 2613: expected `.` to end domain definition
+error 2861: expected ']' to end attributes
+error 2893: expected ']' to end attributes
+error 2897: expected `.` to end domain definition
+error 2935: expected ']' to end attributes
+error 2939: expected `.` to end domain definition
+error 3135: expected ']' to end attributes
+error 3139: expected `.` to end domain definition
+error 3176: expected ']' to end attributes
+error 3180: expected `.` to end domain definition
+error 3227: expected ']' to end attributes
+error 3231: expected `.` to end domain definition
+error 3478: expected ']' to end attributes
+error 3505: expected ']' to end attributes
+error 3509: expected `.` to end domain definition
+error 3542: expected ']' to end attributes
+error 3546: expected `.` to end domain definition
+error 3721: expected ']' to end attributes
+error 3725: expected `.` to end domain definition
+error 3757: expected ']' to end attributes
+error 3761: expected `.` to end domain definition
+error 3803: expected ']' to end attributes
+error 3807: expected `.` to end domain definition

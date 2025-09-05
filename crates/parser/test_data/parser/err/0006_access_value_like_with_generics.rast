@@ -1,0 +1,78 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              ERROR
+                ACCESS_TERM
+                  LIST_EXPR
+                    L_BRACK "["
+                    R_BRACK "]"
+                  COLON ":"
+                  REF_TERM
+                    IDENT "c"
+                    ERROR
+                      L_CURLY "{"
+                      TYPE_ARG
+                        TYPE
+                          REF_TERM
+                            IDENT "string"
+                      R_CURLY "}"
+              COMMA ","
+              WHITESPACE "\r\n        "
+              BIN_STMT
+                APPLY_TERM
+                  ACCESS_TERM
+                    STRING_SEQ
+                      STRING_PART
+                        STRING "\"\""
+                    COLON ":"
+                    REF_TERM
+                      IDENT "d"
+                      ERROR
+                        L_CURLY "{"
+                        TYPE_ARG
+                          TYPE
+                            REF_TERM
+                              IDENT "int"
+                        R_CURLY "}"
+                  L_PAREN "("
+                  R_PAREN ")"
+                COMMA ","
+                WHITESPACE "\r\n        "
+                ERROR
+                  ACCESS_TERM
+                    STRING_SEQ
+                      STRING_PART
+                        STRING "\"\""
+                    COLON ":"
+                    REF_TERM
+                      SCOPE_REF
+                        IDENT "e"
+                      COLONCOLON "::"
+                      IDENT "f"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+error 56: generics are not allowed here
+error 56: cannot access value-like expression
+error 76: generics are not allowed here
+error 96: cannot access value-like expression

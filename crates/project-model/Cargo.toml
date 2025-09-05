@@ -1,0 +1,39 @@
+[package]
+name = "project-model"
+description = "A representation for a VIP project(s) for vip-analyzer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[lib]
+
+[dependencies]
+paths = { workspace = true, features = ["serde1"] }
+base-db.workspace = true
+syntax.workspace = true
+ide-db.workspace = true
+vfs-notify.workspace = true
+vfs.workspace = true
+stdx.workspace = true
+
+crossbeam-channel.workspace = true
+itertools.workspace = true
+walkdir.workspace = true
+rustc-hash.workspace = true
+anyhow.workspace = true
+triomphe.workspace = true
+tracing.workspace = true
+semver.workspace = true
+serde.workspace = true
+serde_derive.workspace = true
+serde-xml-rs = "0.6.0"
+
+[dev-dependencies]
+expect-test.workspace = true
+test-utils.workspace = true
+
+[lints]
+workspace = true

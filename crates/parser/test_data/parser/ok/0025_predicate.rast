@@ -1,0 +1,67 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    CLASS_SECTIONS
+      PREDICATES_SECTION
+        PREDICATES_KW "predicates"
+        WHITESPACE "\r\n    "
+        PREDICATE
+          IDENT "get1"
+          WHITESPACE " "
+          COLON ":"
+          WHITESPACE " "
+          INLINE_PARAMS
+            L_PAREN "("
+            FORMAL_ARG_LIST
+              FORMAL_ARG
+                TYPE
+                  REF_TERM
+                    IDENT "tuple"
+                    GENERICS
+                      L_CURLY "{"
+                      TYPE_ARG
+                        TYPE
+                          VAR_TYPE
+                            VAR "T"
+                      COMMA ","
+                      WHITESPACE " "
+                      TYPE_ARG
+                        TYPE
+                          VAR_TYPE
+                            VAR "_"
+                      R_CURLY "}"
+                WHITESPACE " "
+                VAR "Tuple"
+            R_PAREN ")"
+            WHITESPACE " "
+            RETURN_PARAM
+              ARROW "->"
+              WHITESPACE " "
+              TYPE_ARG
+                TYPE
+                  VAR_TYPE
+                    VAR "T"
+                WHITESPACE " "
+                VAR "Value"
+          WHITESPACE " "
+          CALLING_CONVENTION
+            LANGUAGE_KW "language"
+            WHITESPACE " "
+            IDENT "prolog"
+          WHITESPACE " "
+          LINK_NAME
+            AS_KW "as"
+            WHITESPACE " "
+            STRING_SEQ
+              STRING_PART
+                STRING "\"_Get1_2\""
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"

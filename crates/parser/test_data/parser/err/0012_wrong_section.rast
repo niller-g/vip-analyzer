@@ -1,0 +1,31 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "someClass"
+    WHITESPACE "\r\n\r\n"
+    ERROR
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "someClause"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE " \r\n        "
+            REF_TERM
+              IDENT "succeed"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+      WHITESPACE " "
+      SCOPE_NAME_DECL
+        IDENT "someClass"
+error 15: section not allowed here, found CLAUSES_KW

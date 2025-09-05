@@ -1,0 +1,13 @@
+% own pack
+#include @"aboutDialog\aboutDialog.ph"
+% privately used packages
+#include @"pfc\gui\controls\button\button.ph"
+#include @"pfc\gui\controls\groupBox\groupBox.ph"
+#include @"pfc\gui\controls\iconControl\iconControl.ph"
+#include @"pfc\gui\controls\textControl\textcontrol.ph"
+#include @"pfc\gui\controls\versionControl\versionControl.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"pfc\windowsApi\gui_api\gui_api.ph"
+% implementations
+#include @"aboutDialog\aboutDialog.pro"

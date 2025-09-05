@@ -1,0 +1,21 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+      L_CURLY "{"
+      SCOPE_PARAMS
+        SCOPE_TYPE
+          AT "@"
+          VAR "T"
+        ERROR
+          COMMA ","
+      R_CURLY "}"
+    WHITESPACE " "
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"
+error 14: unexpected trailing comma

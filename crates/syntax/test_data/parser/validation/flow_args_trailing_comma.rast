@@ -1,0 +1,39 @@
+SOURCE_FILE@0..40
+  CLASS_ITEM@0..38
+    CLASS_KW@0..5 "class"
+    WHITESPACE@5..6 " "
+    SCOPE_NAME_DECL@6..7
+      IDENT@6..7 "a"
+    WHITESPACE@7..8 " "
+    CLASS_SECTIONS@8..28
+      DOMAINS_SECTION@8..28
+        DOMAINS_KW@8..15 "domains"
+        WHITESPACE@15..16 " "
+        DOMAIN@16..28
+          IDENT@16..17 "b"
+          WHITESPACE@17..18 " "
+          EQ@18..19 "="
+          WHITESPACE@19..20 " "
+          PREDICATE_DOMAIN@20..27
+            FORMAL_PARAM_LIST@20..22
+              L_PAREN@20..21 "("
+              R_PAREN@21..22 ")"
+            WHITESPACE@22..23 " "
+            FLOW_PATTERN_LIST@23..27
+              FLOW@23..27
+                L_PAREN@23..24 "("
+                FLOW_ARG_LIST@24..26
+                  FUNCTOR_FLOW@24..25
+                    IDENT@24..25 "d"
+                  COMMA@25..26 ","
+                R_PAREN@26..27 ")"
+          DOT@27..28 "."
+    WHITESPACE@28..29 " "
+    END_CLASS_ITEM@29..38
+      END_KW@29..32 "end"
+      WHITESPACE@32..33 " "
+      CLASS_KW@33..38 "class"
+  WHITESPACE@38..40 "\r\n"
+error 25..25: missing flow arguments of functor
+error 26..26: unexpected trailing comma
+error 20..27: flow patterns must be preceded by a mode

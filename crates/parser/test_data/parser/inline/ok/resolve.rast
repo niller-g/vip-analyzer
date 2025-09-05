@@ -1,0 +1,58 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "baz"
+    WHITESPACE "\r\n    "
+    IMPLEMENT_SECTIONS
+      RESOLVE_SECTION
+        RESOLVE_KW "resolve"
+        WHITESPACE "\r\n        "
+        RESOLUTIONS
+          PREDICATE_RESOLUTION
+            ARITY
+              IDENT "bar"
+            WHITESPACE " "
+            FROM_KW "from"
+            WHITESPACE " "
+            REF_TERM
+              IDENT "baz"
+          COMMA ","
+          WHITESPACE "\r\n        "
+          EXTERNAL_PREDICATE_RESOLUTION
+            ARITY
+              IDENT "baz"
+            WHITESPACE " "
+            EXTERNALLY_KW "externally"
+          COMMA ","
+          WHITESPACE "\r\n        "
+          EXTERNAL_PREDICATE_RESOLUTION
+            ARITY
+              IDENT "baz"
+            WHITESPACE " "
+            EXTERNALLY_KW "externally"
+            WHITESPACE " "
+            FROM_KW "from"
+            WHITESPACE " "
+            REF_TERM
+              IDENT "foo"
+          COMMA ","
+          WHITESPACE "\r\n        "
+          INTERFACE_RESOLUTION
+            INTERFACE_KW "interface"
+            WHITESPACE " "
+            INTERFACE_REF
+              SCOPE_REF
+                IDENT "bar"
+            WHITESPACE " "
+            FROM_KW "from"
+            WHITESPACE " "
+            SCOPE_REF
+              IDENT "hoo"
+    WHITESPACE "\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+  WHITESPACE "\r\n"

@@ -1,0 +1,26 @@
+SOURCE_FILE
+  CLASS_ITEM
+    CLASS_KW "class"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n    "
+    TYPE_BOUNDS
+      TYPE_BOUND
+        WHERE_KW "where"
+        WHITESPACE " "
+        SCOPE_TYPE
+          AT "@"
+          VAR "V"
+        WHITESPACE " "
+        SUPPORTS_KW "supports"
+        WHITESPACE " "
+        TYPE
+          VAR_TYPE
+            VAR "T"
+    WHITESPACE "\r\n"
+    END_CLASS_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      CLASS_KW "class"
+  WHITESPACE "\r\n"

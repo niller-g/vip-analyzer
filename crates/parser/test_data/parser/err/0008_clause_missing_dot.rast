@@ -1,0 +1,42 @@
+SOURCE_FILE
+  IMPLEMENT_ITEM
+    IMPLEMENT_KW "implement"
+    WHITESPACE " "
+    SCOPE_NAME_DECL
+      IDENT "a"
+    WHITESPACE "\r\n\r\n"
+    IMPLEMENT_SECTIONS
+      CLAUSES_SECTION
+        CLAUSES_KW "clauses"
+        WHITESPACE "\r\n    "
+        CLAUSE
+          IDENT "b"
+          L_PAREN "("
+          R_PAREN ")"
+          WHITESPACE " "
+          CLAUSE_BODY
+            COLONDASH ":-"
+            WHITESPACE "\r\n        "
+            BIN_STMT
+              REF_TERM
+                IDENT "d"
+              COMMA ","
+              WHITESPACE "\r\n    "
+              APPLY_TERM
+                REF_TERM
+                  IDENT "b"
+                L_PAREN "("
+                R_PAREN ")"
+          WHITESPACE " "
+          ERROR
+            COLON ":"
+            MINUS "-"
+            WHITESPACE "\r\n        "
+            IDENT "e"
+          DOT "."
+    WHITESPACE "\r\n\r\n"
+    END_IMPLEMENT_ITEM
+      END_KW "end"
+      WHITESPACE " "
+      IMPLEMENT_KW "implement"
+error 55: unexpected clause ending, found COLON
