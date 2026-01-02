@@ -37,15 +37,15 @@ fn validate_constructor(constructor: ast::Constructor, errors: &mut Vec<SyntaxEr
 }
 
 fn validate_property(prop: ast::Property, errors: &mut Vec<SyntaxError>) {
-    if let Some(flow) = prop.flow() {
-        if let Some(flow_arg_list) = flow.flow_arg_list() {
-            for flow_arg in flow_arg_list.flow_args() {
-                if !matches!(flow_arg, ast::FlowArg::FlowDirection(_)) {
-                    errors.push(SyntaxError::new(
-                        "flow of properties must be `i` or `o`",
-                        flow_arg.syntax().text_range(),
-                    ));
-                }
+    if let Some(flow) = prop.flow()
+        && let Some(flow_arg_list) = flow.flow_arg_list()
+    {
+        for flow_arg in flow_arg_list.flow_args() {
+            if !matches!(flow_arg, ast::FlowArg::FlowDirection(_)) {
+                errors.push(SyntaxError::new(
+                    "flow of properties must be `i` or `o`",
+                    flow_arg.syntax().text_range(),
+                ));
             }
         }
     }
@@ -77,13 +77,11 @@ fn flow_pattern_mode(
     flow_pattern_list: Option<ast::FlowPatternList>,
     errors: &mut Vec<SyntaxError>,
 ) {
-    if let Some(flow_pat_list) = flow_pattern_list {
-        if flow_pat_list.flow_patterns().any(|it| matches!(it, ast::FlowPattern::Flow(_))) {
-            errors.push(SyntaxError::new(
-                "flow patterns must be preceded by a mode",
-                node.text_range(),
-            ));
-        }
+    if let Some(flow_pat_list) = flow_pattern_list
+        && flow_pat_list.flow_patterns().any(|it| matches!(it, ast::FlowPattern::Flow(_)))
+    {
+        errors
+            .push(SyntaxError::new("flow patterns must be preceded by a mode", node.text_range()));
     }
 }
 

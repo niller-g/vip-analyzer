@@ -191,10 +191,10 @@ impl<'db> MemberDeclarations<'db> {
         expected_arity: &RangeInclusive<u8>,
         expected_term_type: &TermType,
     ) -> bool {
-        if let Some(expected) = expected_name {
-            if *expected != signature.name {
-                return false;
-            }
+        if let Some(expected) = expected_name
+            && *expected != signature.name
+        {
+            return false;
         }
 
         if !signature.overlapping_arity(expected_arity) {
@@ -262,15 +262,15 @@ impl<'db> DeclarationFinder<'db> {
     }
 
     pub(crate) fn with_members_from(mut self, scope: impl Into<Option<ScopeRef>>) -> Self {
-        if let Some(scope) = scope.into() {
-            if let Some(scopes) = self.self_scope.absolutize(self.def_map, scope) {
-                let (cl, i) = scopes.left_and_right();
-                if let Some(cl) = cl {
-                    self.explicit_scopes.push(ItemScope::Class(cl));
-                }
-                if let Some(i) = i {
-                    self.explicit_scopes.push(ItemScope::Interface(i));
-                }
+        if let Some(scope) = scope.into()
+            && let Some(scopes) = self.self_scope.absolutize(self.def_map, scope)
+        {
+            let (cl, i) = scopes.left_and_right();
+            if let Some(cl) = cl {
+                self.explicit_scopes.push(ItemScope::Class(cl));
+            }
+            if let Some(i) = i {
+                self.explicit_scopes.push(ItemScope::Interface(i));
             }
         }
         self

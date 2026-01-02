@@ -34,7 +34,7 @@ pub fn to_utf8_else_utf16(
 /// Returns `None` if the input is not a valid UTF-16 sequence.
 fn to_utf16_bytes(bytes: &[u8], fallback_to_little_endian: bool) -> Option<Vec<u16>> {
     let len = bytes.len();
-    if len % 2 != 0 {
+    if !len.is_multiple_of(2) {
         return None;
     }
 

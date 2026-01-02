@@ -36,14 +36,12 @@ pub(crate) fn handle_work_done_progress_cancel(
     state: &mut GlobalState,
     params: WorkDoneProgressCancelParams,
 ) -> anyhow::Result<()> {
-    if let lsp_types::NumberOrString::String(s) = &params.token {
-        if let Some(id) = s.strip_prefix("vip-analyzer/flycheck/") {
-            if let Ok(id) = id.parse::<u32>() {
-                if let Some(flycheck) = state.flycheck.get(id as usize) {
-                    flycheck.cancel();
-                }
-            }
-        }
+    if let lsp_types::NumberOrString::String(s) = &params.token
+        && let Some(id) = s.strip_prefix("vip-analyzer/flycheck/")
+        && let Ok(id) = id.parse::<u32>()
+        && let Some(flycheck) = state.flycheck.get(id as usize)
+    {
+        flycheck.cancel();
     }
 
     // Just ignore this. It is OK to continue sending progress
@@ -330,12 +328,11 @@ pub(crate) fn handle_run_flycheck(
     params: RunFlycheckParams,
 ) -> anyhow::Result<()> {
     let _p = tracing::info_span!("handle_run_flycheck").entered();
-    if let Some(text_document) = params.text_document {
-        if let Ok(vfs_path) = from_proto::vfs_path(&text_document.uri) {
-            if run_flycheck(state, vfs_path) {
-                return Ok(());
-            }
-        }
+    if let Some(text_document) = params.text_document
+        && let Ok(vfs_path) = from_proto::vfs_path(&text_document.uri)
+        && run_flycheck(state, vfs_path)
+    {
+        return Ok(());
     }
     // No specific flycheck was triggered, so let's trigger all of them.
     for flycheck in state.flycheck.iter() {

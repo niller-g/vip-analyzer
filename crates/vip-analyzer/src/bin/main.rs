@@ -26,12 +26,12 @@ fn main() -> anyhow::Result<ExitCode> {
         wait_for_debugger();
     }
 
-    if env::var(VIPFMT_PATH).is_err() {
-        if let Some(vipfmt_path) = flags.vipfmt_path {
-            // SAFETY: This is safe because this is single-threaded.
-            unsafe {
-                env::set_var(VIPFMT_PATH, vipfmt_path);
-            }
+    if env::var(VIPFMT_PATH).is_err()
+        && let Some(vipfmt_path) = flags.vipfmt_path
+    {
+        // SAFETY: This is safe because this is single-threaded.
+        unsafe {
+            env::set_var(VIPFMT_PATH, vipfmt_path);
         }
     }
 
@@ -93,12 +93,12 @@ fn setup_logging(log_file_flag: Option<PathBuf>) -> anyhow::Result<()> {
         // directory which we set to the project workspace.
         // https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/general-environment-variables
         // https://docs.microsoft.com/en-us/windows/win32/api/dbghelp/nf-dbghelp-syminitialize
-        if let Ok(path) = env::current_exe() {
-            if let Some(path) = path.parent() {
-                // SAFETY: This is safe because this is single-threaded.
-                unsafe {
-                    env::set_var("_NT_SYMBOL_PATH", path);
-                }
+        if let Ok(path) = env::current_exe()
+            && let Some(path) = path.parent()
+        {
+            // SAFETY: This is safe because this is single-threaded.
+            unsafe {
+                env::set_var("_NT_SYMBOL_PATH", path);
             }
         }
     }

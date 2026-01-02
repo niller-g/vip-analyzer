@@ -24,10 +24,10 @@ impl fmt::Display for FlycheckConfig {
         match self {
             FlycheckConfig::VipBuilderCommand { options } => {
                 write!(f, "vipBuilder")?;
-                if let Some(action) = &options.action {
-                    if action != &toolchain::BuildAction::default() {
-                        write!(f, " {}", action)?;
-                    }
+                if let Some(action) = &options.action
+                    && action != &toolchain::BuildAction::default()
+                {
+                    write!(f, " {}", action)?;
                 }
                 Ok(())
             }
