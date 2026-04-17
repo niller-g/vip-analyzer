@@ -45,7 +45,7 @@ config_data! {
         numThreads: Option<NumThreads> = None,
 
         /// Path variables available per VIP project.
-        workspace_ideVariables: FxHashMap<ManifestPath, ManifestVars> = FxHashMap::default(),
+        workspace_ideVariables: FxHashMap<String, ManifestVars> = FxHashMap::default(),
     }
 }
 
@@ -400,7 +400,23 @@ impl Config {
     }
 
     pub fn workspace_ide_variables(&self) -> IdeVariables {
-        IdeVariables::new(self.workspace_ideVariables().clone())
+        let raw = self.workspace_ideVariables();
+        let resolved = raw
+            .iter()
+            .filter_map(|(key, vars)| {
+                let abs_path = AbsPathBuf::try_from(key.as_ref())
+                    .ok()
+                    .or_else(|| {
+                        self.workspace_roots.iter().find_map(|root| {
+                            let resolved = root.join(key);
+                            std::fs::metadata(&resolved).is_ok().then_some(resolved)
+                        })
+                    })?;
+                let manifest = ManifestPath::try_from(abs_path).ok()?;
+                Some((manifest, vars.clone()))
+            })
+            .collect();
+        IdeVariables::new(resolved)
     }
 }
 
@@ -691,7 +707,7 @@ fn field_props(field: &str, ty: &str, doc: &[&str], default: &str) -> serde_json
         "FxHashMap<String, Option<String>>" => set! {
             "type": "object",
         },
-        "FxHashMap<ManifestPath, ManifestVars>" => set! {
+        "FxHashMap<String, ManifestVars>" => set! {
             "type": "object",
         },
         "Option<usize>" => set! {
