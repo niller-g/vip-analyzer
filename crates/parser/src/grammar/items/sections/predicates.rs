@@ -155,19 +155,17 @@ pub(crate) fn flow_pattern_list(p: &mut Parser<'_>) -> Option<CompletedMarker> {
 pub(crate) const FLOW_PATTERN_START: TokenSet = TokenSet::new(&[T!['('], T![anyflow]]);
 
 pub(crate) fn flow_opt(p: &mut Parser<'_>) -> Option<CompletedMarker> {
-    if p.at_ts(FLOW_PATTERN_START) { Some(flow(p)) } else { None }
+    if p.at_ts(FLOW_PATTERN_START) { Some(flow_pattern(p)) } else { None }
 }
 
-fn flow_pattern(p: &mut Parser<'_>) {
+fn flow_pattern(p: &mut Parser<'_>) -> CompletedMarker {
     assert!(p.at_ts(FLOW_PATTERN_START));
     match p.current() {
-        T!['('] => {
-            flow(p);
-        }
+        T!['('] => flow(p),
         T![anyflow] => {
             let m = p.start();
             p.bump(T![anyflow]);
-            m.complete(p, ANY_FLOW);
+            m.complete(p, ANY_FLOW)
         }
         _ => unreachable!("{:?}", p.current()),
     }
