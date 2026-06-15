@@ -33,7 +33,7 @@
                 },
                 {
                     "name": "keyword.control.vip",
-                    "match": "\\b((end +)?(if|foreach|try|match)|guard|language|stdcall|apicall|c|thiscall|prolog|digits|then|elseif|else|do|catch|finally|erroneous|failure|procedure|determ|multi|nondeterm|suspendable|anyflow|and|or|externally|from|div|mod|rem|quot|in|orelse|otherwise|case)\\b"
+                    "match": "\\b((end +)?(if|foreach|try|match)|guard|language|stdcall|apicall|c|thiscall|prolog|digits|then|elseif|else|do|catch|finally|erroneous|failure|procedure|determ|multi|nondeterm|suspending|anyflow|and|or|externally|from|div|mod|rem|quot|in|orelse|otherwise|case)\\b"
                 },
                 {
                     "name": "keyword.other.vip",
